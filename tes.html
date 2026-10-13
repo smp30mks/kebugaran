@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tes Kebugaran | Aplikasi Kebugaran</title>
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+    <link rel="stylesheet" href="tes.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <!-- SIDEBAR HEADER -->
+        <div class="sidebar-header">
+
+            <div class="logo-wrapper">
+                <img
+                    src="assets/logo.jpeg"
+                    alt="Logo UPT SPF SMP Negeri 30 Makassar"
+                >
+            </div>
+
+            <div class="brand">
+                <h2>Kebugaran</h2>
+                <span>Portal Murid</span>
+            </div>
+
+        </div>
+
+
+        <!-- SIDEBAR MENU -->
+        <nav class="sidebar-menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+
+            <a
+                href="materi.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">📚</span>
+                <span>Materi</span>
+            </a>
+
+
+            <a
+                href="video.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">🎥</span>
+                <span>Video</span>
+            </a>
+
+
+            <a
+                href="tes.html"
+                class="menu-item active"
+            >
+                <span class="menu-icon">🏃</span>
+                <span>Tes Kebugaran</span>
+            </a>
+
+
+            <a
+                href="hasil.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">📊</span>
+                <span>Hasil/Nilai</span>
+            </a>
+
+
+            <a
+                href="profil.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">👤</span>
+                <span>Profil</span>
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR FOOTER -->
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                id="logoutButton"
+            >
+                <span>🚪</span>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         OVERLAY MOBILE
+    ====================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <!-- MENU BUTTON MOBILE -->
+            <button
+                type="button"
+                class="menu-button"
+                id="menuButton"
+                aria-label="Buka menu"
+            >
+                ☰
+            </button>
+
+
+            <!-- PAGE TITLE -->
+            <div class="page-title">
+
+                <h1>
+                    Tes Kebugaran
+                </h1>
+
+                <p>
+                    Pengukuran Kebugaran Jasmani
+                </p>
+
+            </div>
+
+
+            <!-- PROFILE MINI -->
+            <div class="profile-mini">
+
+                <div class="profile-avatar">
+
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto profil"
+                    >
+
+                    <span id="topProfilePlaceholder">
+                        👤
+                    </span>
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="topUserName">
+                        Memuat...
+                    </strong>
+
+                    <span id="topUserClass">
+                        -
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             TES CONTENT
+        ================================================== -->
+
+        <section class="tes-content">
+
+
+            <!-- =================================================
+                 HEADER TES
+            ================================================== -->
+
+            <div class="content-header">
+
+
+                <!-- LABEL -->
+                <span class="content-label">
+                    TES KEBUGARAN
+                </span>
+
+
+                <!-- TITLE -->
+                <h1>
+                    Tes Kebugaran Fase D
+                </h1>
+
+
+                <!-- DESCRIPTION -->
+                <p>
+                    Lakukan setiap tes dengan sungguh-sungguh sesuai
+                    petunjuk guru/penguji. Masukkan hasil yang sebenarnya
+                    kamu peroleh. Setiap murid hanya dapat mengirim
+                    hasil tes satu kali.
+                </p>
+
+
+                <!-- HEADER DECORATION -->
+                <div
+                    class="header-decoration header-decoration-one"
+                ></div>
+
+                <div
+                    class="header-decoration header-decoration-two"
+                ></div>
+
+            </div>
+
+
+            <!-- =================================================
+                 DATA TES
+            ================================================== -->
+
+            <div class="form-card">
+
+
+                <!-- DATA TES HEADER -->
+                <div class="form-card-header">
+
+                    <div class="form-card-icon">
+                        ⚙️
+                    </div>
+
+
+                    <div class="form-card-heading">
+
+                        <span class="small-label">
+                            DATA AWAL
+                        </span>
+
+                        <h2 class="form-title">
+                            Data Tes
+                        </h2>
+
+                        <p>
+                            Pilih informasi dasar sebelum memulai tes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DATA TES BODY -->
+                <div class="form-card-body">
+
+
+                    <!-- JENIS KELAMIN -->
+                    <div class="form-group">
+
+                        <label for="jenisKelamin">
+                            Jenis Kelamin
+                        </label>
+
+
+                        <select id="jenisKelamin">
+
+                            <option value="">
+                                Pilih jenis kelamin
+                            </option>
+
+
+                            <option value="putra">
+                                Putra
+                            </option>
+
+
+                            <option value="putri">
+                                Putri
+                            </option>
+
+                        </select>
+
+
+                        <!-- INFO GENDER -->
+                        <div class="gender-note">
+
+                            <span class="gender-note-icon">
+                                ✓
+                            </span>
+
+                            <span>
+                                Pilih jenis kelamin sesuai data diri kamu.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 TEST GRID
+            ================================================== -->
+
+            <div class="test-grid">
+
+
+                <!-- =================================================
+                     TEST 1
+                ================================================== -->
+
+                <article class="test-card">
+
+
+                    <div class="test-number">
+                        1
+                    </div>
+
+
+                    <div class="test-content">
+
+
+                        <span class="test-label">
+                            TKSI FASE D
+                        </span>
+
+
+                        <h3>
+                            Hand &amp; Eye Coordination
+                        </h3>
+
+
+                        <p>
+                            Masukkan jumlah tangkapan yang diperoleh
+                            sesuai hasil tes.
+                        </p>
+
+
+                        <div class="input-group">
+
+
+                            <label for="handEye">
+                                Jumlah hasil
+                            </label>
+
+
+                            <div class="input-with-unit">
+
+                                <input
+                                    type="number"
+                                    id="handEye"
+                                    min="0"
+                                    step="1"
+                                    inputmode="numeric"
+                                    placeholder="Contoh: 15"
+                                >
+
+                                <span>
+                                    x
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     TEST 2
+                ================================================== -->
+
+                <article class="test-card">
+
+
+                    <div class="test-number">
+                        2
+                    </div>
+
+
+                    <div class="test-content">
+
+
+                        <span class="test-label">
+                            TKSI FASE D
+                        </span>
+
+
+                        <h3>
+                            Sit Up
+                        </h3>
+
+
+                        <p>
+                            Masukkan jumlah sit up yang dilakukan
+                            selama 30 detik.
+                        </p>
+
+
+                        <div class="input-group">
+
+
+                            <label for="sitUp">
+                                Jumlah hasil
+                            </label>
+
+
+                            <div class="input-with-unit">
+
+                                <input
+                                    type="number"
+                                    id="sitUp"
+                                    min="0"
+                                    step="1"
+                                    inputmode="numeric"
+                                    placeholder="Contoh: 17"
+                                >
+
+                                <span>
+                                    x
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     TEST 3
+                ================================================== -->
+
+                <article class="test-card">
+
+
+                    <div class="test-number">
+                        3
+                    </div>
+
+
+                    <div class="test-content">
+
+
+                        <span class="test-label">
+                            TKSI FASE D
+                        </span>
+
+
+                        <h3>
+                            Standing Broad Jump
+                        </h3>
+
+
+                        <p>
+                            Masukkan hasil lompatan. Bila dilakukan
+                            2 kali, masukkan kedua hasil. Sistem akan
+                            menggunakan hasil terbaik.
+                        </p>
+
+
+                        <div class="input-row">
+
+
+                            <!-- PERCOBAAN 1 -->
+                            <div class="input-group">
+
+                                <label for="broadJump1">
+                                    Percobaan 1
+                                </label>
+
+
+                                <div class="input-with-unit">
+
+                                    <input
+                                        type="number"
+                                        id="broadJump1"
+                                        min="0"
+                                        step="1"
+                                        inputmode="numeric"
+                                        placeholder="250"
+                                    >
+
+                                    <span>
+                                        cm
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- PERCOBAAN 2 -->
+                            <div class="input-group">
+
+                                <label for="broadJump2">
+                                    Percobaan 2
+                                </label>
+
+
+                                <div class="input-with-unit">
+
+                                    <input
+                                        type="number"
+                                        id="broadJump2"
+                                        min="0"
+                                        step="1"
+                                        inputmode="numeric"
+                                        placeholder="245"
+                                    >
+
+                                    <span>
+                                        cm
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     TEST 4
+                ================================================== -->
+
+                <article class="test-card">
+
+
+                    <div class="test-number">
+                        4
+                    </div>
+
+
+                    <div class="test-content">
+
+
+                        <span class="test-label">
+                            TKSI FASE D
+                        </span>
+
+
+                        <h3>
+                            T Test
+                        </h3>
+
+
+                        <p>
+                            Masukkan waktu dari 2 percobaan.
+                            Sistem menggunakan waktu terbaik,
+                            yaitu waktu yang paling cepat.
+                        </p>
+
+
+                        <div class="input-row">
+
+
+                            <!-- PERCOBAAN 1 -->
+                            <div class="input-group">
+
+                                <label for="tTest1">
+                                    Percobaan 1
+                                </label>
+
+
+                                <div class="input-with-unit">
+
+                                    <input
+                                        type="number"
+                                        id="tTest1"
+                                        min="0"
+                                        step="0.01"
+                                        inputmode="decimal"
+                                        placeholder="10.50"
+                                    >
+
+                                    <span>
+                                        detik
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- PERCOBAAN 2 -->
+                            <div class="input-group">
+
+                                <label for="tTest2">
+                                    Percobaan 2
+                                </label>
+
+
+                                <div class="input-with-unit">
+
+                                    <input
+                                        type="number"
+                                        id="tTest2"
+                                        min="0"
+                                        step="0.01"
+                                        inputmode="decimal"
+                                        placeholder="10.30"
+                                    >
+
+                                    <span>
+                                        detik
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     TEST 5
+                ================================================== -->
+
+                <article
+                    class="test-card test-card-wide"
+                >
+
+
+                    <div class="test-number">
+                        5
+                    </div>
+
+
+                    <div class="test-content">
+
+
+                        <span class="test-label">
+                            TKSI FASE D
+                        </span>
+
+
+                        <h3>
+                            Beep Test
+                        </h3>
+
+
+                        <p>
+                            Masukkan level dan balikan terakhir
+                            yang berhasil dicapai.
+                        </p>
+
+
+                        <div class="input-row">
+
+
+                            <!-- LEVEL -->
+                            <div class="input-group">
+
+                                <label for="beepLevel">
+                                    Level
+                                </label>
+
+
+                                <input
+                                    type="number"
+                                    id="beepLevel"
+                                    min="1"
+                                    step="1"
+                                    inputmode="numeric"
+                                    placeholder="Contoh: 7"
+                                >
+
+                            </div>
+
+
+                            <!-- BALIKAN -->
+                            <div class="input-group">
+
+                                <label for="beepShuttle">
+                                    Balikan
+                                </label>
+
+
+                                <input
+                                    type="number"
+                                    id="beepShuttle"
+                                    min="1"
+                                    step="1"
+                                    inputmode="numeric"
+                                    placeholder="Contoh: 7"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 SPORTIVITAS DAN KEJUJURAN
+            ================================================== -->
+
+            <div class="info-card">
+
+
+                <!-- INFO HEADER -->
+                <div class="info-card-header">
+
+
+                    <div class="info-icon">
+                        🏅
+                    </div>
+
+
+                    <div class="info-heading">
+
+                        <span class="small-label">
+                            PENTING
+                        </span>
+
+                        <strong>
+                            Sportivitas dan Kejujuran
+                        </strong>
+
+                        <span>
+                            Isi hasil tes dengan keadaan yang sebenarnya.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFO BODY -->
+                <div class="info-card-body">
+
+
+                    <p>
+                        Isilah hasil sesuai kemampuan dan hasil tes
+                        yang sebenarnya. Jangan menambah, mengurangi,
+                        atau mengubah hasil untuk mendapatkan nilai
+                        yang lebih tinggi.
+                    </p>
+
+
+                    <p>
+                        Tes ini bertujuan untuk mengetahui kondisi
+                        kebugaranmu yang sebenarnya dan membantu
+                        meningkatkan kemampuanmu secara bertahap.
+                    </p>
+
+
+                    <!-- HIGHLIGHT -->
+                    <div class="info-highlight">
+
+                        Pastikan semua hasil sudah benar sebelum
+                        menekan tombol
+                        <strong>
+                            Simpan Semua Hasil
+                        </strong>.
+
+                        Setelah disimpan, hasil tes tidak dapat
+                        diubah dan setiap murid hanya dapat
+                        mengirim hasil satu kali.
+
+                    </div>
+
+
+                    <!-- CHECK LIST -->
+                    <div class="info-check-list">
+
+
+                        <div class="info-check">
+
+                            <span class="info-check-icon">
+                                ✓
+                            </span>
+
+                            <span>
+                                Isi hasil sesuai kemampuan sebenarnya.
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-check">
+
+                            <span class="info-check-icon">
+                                ✓
+                            </span>
+
+                            <span>
+                                Periksa semua data sebelum menyimpan.
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-check">
+
+                            <span class="info-check-icon">
+                                ✓
+                            </span>
+
+                            <span>
+                                Hasil yang disimpan tidak dapat diubah.
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-check">
+
+                            <span class="info-check-icon">
+                                ✓
+                            </span>
+
+                            <span>
+                                Setiap murid hanya mengirim satu kali.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 ACTION
+            ================================================== -->
+
+            <div class="action-area">
+
+
+                <button
+                    type="button"
+                    id="saveAllTests"
+                    class="save-button"
+                >
+
+                    <span>
+                        💾
+                    </span>
+
+                    <span>
+                        Simpan Semua Hasil
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 MESSAGE
+            ================================================== -->
+
+            <div
+                id="message"
+                class="message"
+                role="alert"
+                aria-live="polite"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="tes.js"
+    ></script>
+
+</body>
+
+</html>

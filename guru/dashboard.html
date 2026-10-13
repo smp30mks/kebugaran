@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Guru - Aplikasi Kebugaran</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <div class="logo-box">
+                <img
+                    src="../assets/logo.jpeg"
+                    alt="Logo"
+                >
+            </div>
+
+            <div class="brand">
+                <h2>Kebugaran</h2>
+                <span>Portal Guru</span>
+            </div>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item active"
+            >
+                <span class="menu-icon">🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+
+            <a
+                href="siswa.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">👨‍🎓</span>
+                <span>Data Murid</span>
+            </a>
+
+            
+            <a
+                href="materi.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">📚</span>
+                <span>Materi</span>
+            </a>
+
+
+            <a
+                href="video.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">🎥</span>
+                <span>Video</span>
+            </a>
+
+
+            <a
+                href="tes.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">🏃</span>
+                <span>Tes Kebugaran</span>
+            </a>
+
+
+            <a
+                href="hasil.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">📊</span>
+                <span>Hasil & Nilai</span>
+            </a>
+
+
+            <a
+                href="laporan.html"
+                class="menu-item"
+            >
+                <span class="menu-icon">📄</span>
+                <span>Laporan</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+                <span>🚪</span>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         SIDEBAR OVERLAY
+    ========================== -->
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main class="main">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <button
+                    type="button"
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Buka menu"
+                >
+                    ☰
+                </button>
+
+
+                <div class="page-heading">
+
+                    <h1>
+                        Dashboard
+                    </h1>
+
+                    <p>
+                        Panel pengelolaan aplikasi kebugaran
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="top-profile">
+
+                <div class="top-avatar">
+
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto Guru"
+                        style="display: none;"
+                    >
+
+                    <div
+                        class="top-avatar-placeholder"
+                        id="topProfilePlaceholder"
+                    >
+                        👨‍🏫
+                    </div>
+
+                </div>
+
+
+                <div class="top-profile-info">
+
+                    <strong id="topUserName">
+                        Guru
+                    </strong>
+
+                    <span>
+                        Portal Guru
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+
+            <!-- =========================
+                 WELCOME
+            ========================== -->
+            <section class="welcome-card">
+
+                <div class="welcome-decoration decoration-one"></div>
+                <div class="welcome-decoration decoration-two"></div>
+
+
+                <div class="welcome-text">
+
+                    <span class="section-label">
+                        PORTAL GURU
+                    </span>
+
+                    <h2>
+                        Selamat Datang di Dashboard
+                    </h2>
+
+                    <p>
+                        Kelola data murid, tes kebugaran,
+                        hasil nilai, materi pembelajaran,
+                        video, dan laporan melalui satu
+                        dashboard.
+                    </p>
+
+                </div>
+
+
+                <div class="welcome-icon">
+                    👨‍🏫
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 SUMMARY
+            ========================== -->
+            <section class="summary-grid">
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon student-icon">
+                        👨‍🎓
+                    </div>
+
+                    <div class="summary-info">
+
+                        <span>
+                            Total Murid
+                        </span>
+
+                        <strong id="totalSiswa">
+                            0
+                        </strong>
+
+                        <small>
+                            Murid terdaftar
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon class-icon">
+                        🏫
+                    </div>
+
+                    <div class="summary-info">
+
+                        <span>
+                            Total Kelas
+                        </span>
+
+                        <strong id="totalKelas">
+                            0
+                        </strong>
+
+                        <small>
+                            Kelas aktif
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon test-icon">
+                        ✅
+                    </div>
+
+                    <div class="summary-info">
+
+                        <span>
+                            Tes Selesai
+                        </span>
+
+                        <strong id="totalTesSelesai">
+                            0
+                        </strong>
+
+                        <small>
+                            Murid selesai 5 tes
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon score-icon">
+                        📈
+                    </div>
+
+                    <div class="summary-info">
+
+                        <span>
+                            Rata-rata Nilai
+                        </span>
+
+                        <strong id="rataNilai">
+                            0
+                        </strong>
+
+                        <small>
+                            Seluruh hasil tes
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 QUICK ACCESS
+            ========================== -->
+            <section class="quick-grid">
+
+
+                <a
+                    href="tes.html"
+                    class="quick-card"
+                >
+
+                    <div class="quick-icon">
+                        🏃
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Tes Kebugaran
+                        </strong>
+
+                        <span>
+                            Kelola pengajuan dan pelaksanaan tes
+                        </span>
+
+                    </div>
+
+                    <b>
+                        →
+                    </b>
+
+                </a>
+
+
+                <a
+                    href="hasil.html"
+                    class="quick-card"
+                >
+
+                    <div class="quick-icon">
+                        📊
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Hasil & Nilai
+                        </strong>
+
+                        <span>
+                            Lihat dan kelola hasil tes murid
+                        </span>
+
+                    </div>
+
+                    <b>
+                        →
+                    </b>
+
+                </a>
+
+
+                <a
+                    href="laporan.html"
+                    class="quick-card"
+                >
+
+                    <div class="quick-icon">
+                        📄
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Laporan
+                        </strong>
+
+                        <span>
+                            Kelola dan lihat laporan kebugaran
+                        </span>
+
+                    </div>
+
+                    <b>
+                        →
+                    </b>
+
+                </a>
+
+            </section>
+
+
+            <!-- =========================
+                 DATA MURID
+            ========================== -->
+            <section class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            DATA TERBARU
+                        </span>
+
+                        <h2>
+                            Data Murid
+                        </h2>
+
+                        <p>
+                            Daftar murid yang terdaftar
+                            dalam aplikasi.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="siswa.html"
+                        class="outline-button"
+                    >
+                        Lihat Semua
+                    </a>
+
+                </div>
+
+
+                <!-- TOOLS -->
+                <div class="table-tools">
+
+
+                    <div class="search-box">
+
+                        <span>
+                            🔎
+                        </span>
+
+                        <input
+                            type="text"
+                            id="searchSiswa"
+                            placeholder="Cari nama atau NISN..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+                    <select id="filterKelas">
+
+                        <option value="">
+                            Semua Kelas
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- TABLE -->
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    No
+                                </th>
+
+                                <th>
+                                    Nama Murid
+                                </th>
+
+                                <th>
+                                    NISN
+                                </th>
+
+                                <th>
+                                    Kelas
+                                </th>
+
+                                <th>
+                                    Tahun Ajaran
+                                </th>
+
+                                <th>
+                                    Status Tes
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="siswaTableBody">
+
+                            <tr>
+
+                                <td
+                                    colspan="6"
+                                    class="loading-cell"
+                                >
+                                    Memuat data murid...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 INFORMATION
+            ========================== -->
+            <section class="info-card">
+
+                <div class="info-icon">
+                    💡
+                </div>
+
+
+                <div>
+
+                    <span class="info-label">
+                        INFORMASI
+                    </span>
+
+                    <h3>
+                        Kelola data dengan mudah
+                    </h3>
+
+                    <p>
+                        Gunakan menu di sebelah kiri untuk
+                        mengelola data murid, kelas, materi,
+                        video, tes kebugaran, hasil nilai,
+                        dan laporan.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script
+        type="module"
+        src="dashboard.js"
+    ></script>
+
+</body>
+</html>

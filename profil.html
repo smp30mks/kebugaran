@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profil | Aplikasi Kebugaran</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="profil.css"
+    >
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <div class="logo-wrapper">
+                <img
+                    src="assets/logo.jpeg"
+                    alt="Logo Sekolah"
+                >
+            </div>
+
+            <div class="brand">
+
+                <h2>Kebugaran</h2>
+
+                <span>Portal Murid</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" class="menu-item">
+                <span class="menu-icon">🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="materi.html" class="menu-item">
+                <span class="menu-icon">📚</span>
+                <span>Materi</span>
+            </a>
+
+            <a href="video.html" class="menu-item">
+                <span class="menu-icon">🎥</span>
+                <span>Video</span>
+            </a>
+
+            <a href="tes.html" class="menu-item">
+                <span class="menu-icon">🏃</span>
+                <span>Tes Kebugaran</span>
+            </a>
+
+            <a href="hasil.html" class="menu-item">
+                <span class="menu-icon">📊</span>
+                <span>Hasil/Nilai</span>
+            </a>
+
+            <a href="profil.html" class="menu-item active">
+                <span class="menu-icon">👤</span>
+                <span>Profil</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                id="logoutButton"
+            >
+                <span>🚪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button
+                type="button"
+                class="menu-button"
+                id="menuButton"
+                aria-label="Buka menu"
+            >
+                ☰
+            </button>
+
+
+            <div class="page-title">
+
+                <h1>Profil</h1>
+
+                <p>
+                    Informasi akun murid
+                </p>
+
+            </div>
+
+
+            <div class="profile-mini">
+
+                <div class="profile-avatar">
+
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto profil"
+                    >
+
+                    <span id="topProfilePlaceholder">
+                        👤
+                    </span>
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="topUserName">
+                        Memuat...
+                    </strong>
+
+                    <span id="topUserClass">
+                        -
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="profile-content">
+
+
+            <!-- PROFILE HEADER -->
+
+            <div class="profile-header-card">
+
+                <div class="profile-photo-area">
+
+                    <div class="large-avatar">
+
+                        <img
+                            id="profilePhoto"
+                            src=""
+                            alt="Foto profil"
+                        >
+
+                        <span
+                            id="profilePhotoPlaceholder"
+                        >
+                            👤
+                        </span>
+
+                    </div>
+
+
+                    <label
+                        for="photoInput"
+                        class="photo-button"
+                    >
+                        📷 Ganti Foto
+                    </label>
+
+                    <input
+                        type="file"
+                        id="photoInput"
+                        accept="image/jpeg,image/png,image/webp"
+                        hidden
+                    >
+
+                    <small>
+                        JPG, PNG, atau WebP. Maksimal 1 MB.
+                    </small>
+
+                </div>
+
+
+                <div class="profile-header-text">
+
+                    <span>
+                        Profil Murid
+                    </span>
+
+                    <h2 id="profileName">
+                        Memuat...
+                    </h2>
+
+                    <p id="profileEmail">
+                        -
+                    </p>
+
+                    <div
+                        id="photoMessage"
+                        class="photo-message"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATA PRIBADI -->
+
+            <div class="profile-section">
+
+                <div class="section-title">
+
+                    <h2>
+                        Data Pribadi
+                    </h2>
+
+                    <p>
+                        Informasi akun yang terdaftar
+                    </p>
+
+                </div>
+
+
+                <div class="data-grid">
+
+                    <div class="data-card">
+                        <span>Nama Lengkap</span>
+                        <strong id="dataNama">-</strong>
+                    </div>
+
+                    <div class="data-card">
+                        <span>NISN</span>
+                        <strong id="dataNisn">-</strong>
+                    </div>
+
+                    <div class="data-card">
+                        <span>Email</span>
+                        <strong id="dataEmail">-</strong>
+                    </div>
+
+                    <div class="data-card">
+                        <span>Kelas</span>
+                        <strong id="dataKelas">-</strong>
+                    </div>
+
+                    <div class="data-card">
+                        <span>Tahun Ajaran</span>
+                        <strong id="dataTahunAjaran">-</strong>
+                    </div>
+
+                    <div class="data-card">
+                        <span>Status Akun</span>
+                        <strong class="status-active">
+                            Aktif
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFO -->
+
+            <div class="info-box">
+
+                <div class="info-icon">
+                    ℹ️
+                </div>
+
+                <div>
+
+                    <h3>
+                        Informasi
+                    </h3>
+
+                    <p>
+                        Foto profil dapat diganti kapan saja.
+                        Data NISN, kelas, dan tahun ajaran
+                        dikelola oleh sistem sekolah.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        type="module"
+        src="profil.js"
+    ></script>
+
+</body>
+
+</html>

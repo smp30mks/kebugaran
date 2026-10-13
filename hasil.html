@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Hasil / Nilai | Website Kebugaran
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="hasil.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+
+        <!-- =================================================
+             SIDEBAR HEADER
+        ================================================== -->
+
+        <div class="sidebar-header">
+
+            <div class="logo-wrapper">
+
+                <img
+                    src="assets/logo.jpeg"
+                    alt="Logo UPT SPF SMP Negeri 30 Makassar"
+                >
+
+            </div>
+
+
+            <div class="brand">
+
+                <h2>
+                    Kebugaran
+                </h2>
+
+                <span>
+                    Portal Murid
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             MENU
+        ================================================== -->
+
+        <nav class="sidebar-menu">
+
+
+            <!-- DASHBOARD -->
+
+            <a
+                href="dashboard.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏠
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- MATERI -->
+
+            <a
+                href="materi.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📚
+                </span>
+
+                <span>
+                    Materi
+                </span>
+
+            </a>
+
+
+            <!-- VIDEO -->
+
+            <a
+                href="video.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🎥
+                </span>
+
+                <span>
+                    Video
+                </span>
+
+            </a>
+
+
+            <!-- TES -->
+
+            <a
+                href="tes.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏃
+                </span>
+
+                <span>
+                    Tes Kebugaran
+                </span>
+
+            </a>
+
+
+            <!-- HASIL -->
+
+            <a
+                href="hasil.html"
+                class="menu-item active"
+            >
+
+                <span class="menu-icon">
+                    📊
+                </span>
+
+                <span>
+                    Hasil/Nilai
+                </span>
+
+            </a>
+
+
+            <!-- PROFIL -->
+
+            <a
+                href="profil.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    👤
+                </span>
+
+                <span>
+                    Profil
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- =================================================
+             LOGOUT
+        ================================================== -->
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                id="logoutButton"
+            >
+
+                <span>
+                    🚪
+                </span>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                type="button"
+                class="menu-button"
+                id="menuButton"
+                aria-label="Buka menu"
+            >
+
+                ☰
+
+            </button>
+
+
+            <!-- PAGE TITLE -->
+
+            <div class="page-title">
+
+                <h1>
+                    Hasil / Nilai
+                </h1>
+
+                <p>
+                    Hasil pengukuran kebugaran jasmani
+                </p>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <div class="profile-mini">
+
+                <div class="profile-avatar">
+
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto profil"
+                    >
+
+                    <span
+                        id="topProfilePlaceholder"
+                    >
+                        👤
+                    </span>
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="topUserName">
+                        Memuat...
+                    </strong>
+
+                    <span id="topUserClass">
+                        -
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <section class="hasil-content">
+
+
+            <!-- =================================================
+                 HEADER HASIL
+            ================================================== -->
+
+            <div class="content-header">
+
+                <span class="content-label">
+                    HASIL TES KEBUGARAN
+                </span>
+
+
+                <h2>
+                    Hasil / Nilai Kebugaran
+                </h2>
+
+
+                <p>
+                    Lihat hasil pengukuran dan skor Tes Kebugaran
+                    Fase D yang telah kamu lakukan.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 SUMMARY
+            ================================================== -->
+
+            <div class="summary-grid">
+
+
+                <!-- TOTAL TES -->
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        📝
+                    </div>
+
+
+                    <div class="summary-info">
+
+                        <span>
+                            Total Tes
+                        </span>
+
+                        <strong id="totalTes">
+                            5
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TES SELESAI -->
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        ✅
+                    </div>
+
+
+                    <div class="summary-info">
+
+                        <span>
+                            Tes Selesai
+                        </span>
+
+                        <strong id="tesSelesai">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RATA-RATA -->
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        ⭐
+                    </div>
+
+
+                    <div class="summary-info">
+
+                        <span>
+                            Rata-rata Skor
+                        </span>
+
+                        <strong id="rataRata">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 RESULT CARD
+            ================================================== -->
+
+            <div class="result-card">
+
+
+                <!-- RESULT HEADER -->
+
+                <div class="result-header">
+
+                    <span class="result-label">
+                        TKSI FASE D
+                    </span>
+
+
+                    <h2>
+                        Daftar Hasil Tes
+                    </h2>
+
+                </div>
+
+
+                <!-- =================================================
+                     TABLE
+                ================================================== -->
+
+                <div class="table-wrapper">
+
+                    <table class="result-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    No
+                                </th>
+
+                                <th>
+                                    Jenis Tes
+                                </th>
+
+                                <th>
+                                    Hasil
+                                </th>
+
+                                <th>
+                                    Skor
+                                </th>
+
+                                <th>
+                                    Kategori
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="resultTableBody">
+
+                            <!--
+                                Data hasil tes
+                                akan dimasukkan oleh hasil.js
+                            -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- =================================================
+                     EMPTY RESULT
+                ================================================== -->
+
+                <div
+                    id="emptyResult"
+                    class="empty-result"
+                >
+
+                    <div class="empty-icon">
+                        📊
+                    </div>
+
+
+                    <h3>
+                        Belum Ada Hasil Tes
+                    </h3>
+
+
+                    <p>
+                        Kamu belum memiliki hasil tes kebugaran.
+                        Silakan lakukan tes terlebih dahulu.
+                    </p>
+
+
+                    <a
+                        href="tes.html"
+                        class="empty-button"
+                    >
+                        Mulai Tes
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 INFORMATION
+            ================================================== -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🏅
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Tentang Hasil Tes
+                    </strong>
+
+
+                    <p>
+                        Hasil tes menunjukkan kemampuan kebugaranmu
+                        berdasarkan pengukuran yang telah dilakukan.
+                        Skor dan kategori dihitung berdasarkan hasil
+                        tes dan jenis kelamin.
+                    </p>
+
+
+                    <p>
+                        Gunakan hasil ini sebagai bahan untuk mengetahui
+                        kemampuanmu dan meningkatkan kebugaran secara
+                        bertahap.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="hasil.js"
+    ></script>
+
+
+</body>
+
+</html>

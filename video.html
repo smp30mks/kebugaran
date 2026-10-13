@@ -1,0 +1,977 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+
+    <title>Video Pembelajaran | Aplikasi Kebugaran</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS terpisah -->
+    <link rel="stylesheet" href="video.css">
+</head>
+
+<body>
+
+    <!-- ==================== SIDEBAR ==================== -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo-wrapper">
+                <img
+                    src="assets/logo.jpeg"
+                    alt="Logo UPT SPF SMP Negeri 30 Makassar"
+                >
+            </div>
+
+            <div class="brand">
+                <h2>Kebugaran</h2>
+                <span>Portal Murid</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-menu" aria-label="Navigasi utama">
+
+            <a href="dashboard.html" class="menu-item">
+                <span class="menu-icon">🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="materi.html" class="menu-item">
+                <span class="menu-icon">📚</span>
+                <span>Materi</span>
+            </a>
+
+            <a href="video.html" class="menu-item active" aria-current="page">
+                <span class="menu-icon">🎥</span>
+                <span>Video</span>
+            </a>
+
+            <a href="tes.html" class="menu-item">
+                <span class="menu-icon">🏃</span>
+                <span>Tes Kebugaran</span>
+            </a>
+
+            <a href="hasil.html" class="menu-item">
+                <span class="menu-icon">📊</span>
+                <span>Hasil/Nilai</span>
+            </a>
+
+            <a href="profil.html" class="menu-item">
+                <span class="menu-icon">👤</span>
+                <span>Profil</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <button type="button" id="logoutButton">
+                <span>🚪</span>
+                <span>Logout</span>
+            </button>
+        </div>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ==================== KONTEN UTAMA ==================== -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <button
+                type="button"
+                class="menu-button"
+                id="menuButton"
+                aria-label="Buka menu navigasi"
+            >
+                ☰
+            </button>
+
+            <div class="page-title">
+                <h1>Video Pembelajaran</h1>
+                <p>Pelajari kebugaran jasmani melalui video</p>
+            </div>
+
+            <div class="profile-mini">
+
+                <div class="profile-avatar">
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto profil"
+                        hidden
+                    >
+                    <span id="topProfilePlaceholder">👤</span>
+                </div>
+
+                <div class="profile-info">
+                    <strong id="topUserName">Memuat...</strong>
+                    <span id="topUserClass">-</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ISI HALAMAN VIDEO -->
+        <section class="video-content">
+
+            <!-- HERO -->
+            <section class="video-hero">
+
+                <div class="video-hero-glow"></div>
+
+                <div class="video-hero-content">
+
+                    <span class="video-hero-label">
+                        🎥 PUSAT VIDEO PEMBELAJARAN
+                    </span>
+
+                    <h2>
+                        Belajar Lewat Video Jadi Lebih Seru
+                    </h2>
+
+                    <p>
+                        Saksikan video pembelajaran PJOK untuk memahami
+                        kebugaran jasmani, pemanasan, koordinasi, kekuatan,
+                        kelincahan, dan daya tahan tubuh.
+                    </p>
+
+                    <div class="video-hero-stats">
+
+                        <div class="video-hero-stat">
+                            <strong id="heroTotalVideo">7</strong>
+                            <span>Video</span>
+                        </div>
+
+                        <div class="video-hero-divider"></div>
+
+                        <div class="video-hero-stat">
+                            <strong>2</strong>
+                            <span>Materi Dasar</span>
+                        </div>
+
+                        <div class="video-hero-divider"></div>
+
+                        <div class="video-hero-stat">
+                            <strong>5</strong>
+                            <span>Tes Kebugaran</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="video-hero-visual">
+
+                    <div class="video-hero-circle circle-one"></div>
+                    <div class="video-hero-circle circle-two"></div>
+                    <div class="video-hero-circle circle-three"></div>
+
+                    <div class="video-main-play">
+                        <span>▶</span>
+                    </div>
+
+                    <div class="video-floating-card floating-one">
+                        <strong>🎬</strong>
+                        <span>Tutorial</span>
+                    </div>
+
+                    <div class="video-floating-card floating-two">
+                        <strong>💪</strong>
+                        <span>Praktik</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- KATEGORI -->
+            <section class="video-category-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">KATEGORI VIDEO</span>
+                        <h2>Pilih Topik</h2>
+                    </div>
+
+                    <span class="section-small-text">
+                        7 video pembelajaran
+                    </span>
+                </div>
+
+                <div class="video-category-grid">
+
+                    <button
+                        type="button"
+                        class="video-category-card active"
+                        data-category="all"
+                    >
+                        <span class="video-category-icon">🎬</span>
+
+                        <span class="video-category-text">
+                            <strong>Semua Video</strong>
+                            <small>7 video</small>
+                        </span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="video-category-card"
+                        data-category="Dasar Kebugaran"
+                    >
+                        <span class="video-category-icon">❤️</span>
+
+                        <span class="video-category-text">
+                            <strong>Dasar Kebugaran</strong>
+                            <small>2 video</small>
+                        </span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="video-category-card"
+                        data-category="Tes Kebugaran"
+                    >
+                        <span class="video-category-icon">🏆</span>
+
+                        <span class="video-category-text">
+                            <strong>Tes Kebugaran</strong>
+                            <small>5 video</small>
+                        </span>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- PENCARIAN -->
+            <section class="video-search-card">
+
+                <div class="search-wrapper">
+                    <span class="search-icon">🔎</span>
+
+                    <input
+                        type="search"
+                        id="searchVideo"
+                        placeholder="Cari video pembelajaran..."
+                        aria-label="Cari video"
+                        autocomplete="off"
+                    >
+                </div>
+
+                <div class="video-search-info">
+                    <span class="video-search-icon">🎥</span>
+
+                    <span>
+                        <strong id="videoCount">7</strong>
+                        video tersedia
+                    </span>
+                </div>
+
+            </section>
+
+            <!-- DAFTAR VIDEO -->
+            <section class="video-list-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">KOLEKSI VIDEO</span>
+                        <h2>Video Pembelajaran</h2>
+                    </div>
+
+                    <span class="section-small-text">
+                        Tonton sebelum praktik
+                    </span>
+                </div>
+
+                <div class="video-grid" id="videoGrid">
+
+                    <!-- VIDEO 1 -->
+                    <article
+                        class="video-card featured"
+                        data-title="Pengertian Kebugaran Jasmani"
+                        data-category="Dasar Kebugaran"
+                        data-video="https://youtu.be/64VcB8X0JNo?si=e4ZqDYvf0_ueTtr7"
+                    >
+
+                        <div class="video-thumbnail">
+
+                            <img
+                                class="youtube-thumbnail"
+                                src=""
+                                alt="Thumbnail Pengertian Kebugaran Jasmani"
+                                loading="lazy"
+                            >
+
+                            <div class="video-thumbnail-overlay"></div>
+
+                            <span class="video-category">
+                                Dasar Kebugaran
+                            </span>
+
+                            <span class="video-number">01</span>
+
+                            <span class="video-featured-badge">
+                                ⭐ MULAI DARI SINI
+                            </span>
+
+                            <button
+                                type="button"
+                                class="play-button video-play-trigger"
+                                aria-label="Tonton Pengertian Kebugaran Jasmani"
+                                data-title="Pengertian Kebugaran Jasmani"
+                            >
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="video-card-body">
+
+                            <div class="video-card-top">
+                                <span class="video-level">DASAR</span>
+                                <span class="video-duration">⏱ 10 Menit</span>
+                            </div>
+
+                            <h3>Pengertian Kebugaran Jasmani</h3>
+
+                            <p>
+                                Pelajari pengertian kebugaran jasmani dan
+                                pentingnya menjaga kondisi tubuh agar tetap
+                                sehat serta mampu melakukan aktivitas sehari-hari.
+                            </p>
+
+                            <div class="video-progress">
+                                <div class="video-progress-label">
+                                    <span>Video 1 dari 7</span>
+                                    <strong>14%</strong>
+                                </div>
+
+                                <div class="video-progress-line">
+                                    <span style="width: 14%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="video-footer">
+                                <span class="video-topic">
+                                    ❤️ Dasar kebugaran
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="video-button video-play-trigger"
+                                    data-title="Pengertian Kebugaran Jasmani"
+                                >
+                                    Tonton Video <span>→</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- VIDEO 2 -->
+                    <article
+                        class="video-card"
+                        data-title="Pemanasan Sebelum Olahraga"
+                        data-category="Dasar Kebugaran"
+                        data-video="https://youtu.be/vCT-ymzlgzk?si=l8elFM-9xQgPhgDI"
+                    >
+
+                        <div class="video-thumbnail">
+
+                            <img
+                                class="youtube-thumbnail"
+                                src=""
+                                alt="Thumbnail Pemanasan Sebelum Olahraga"
+                                loading="lazy"
+                            >
+
+                            <div class="video-thumbnail-overlay"></div>
+
+                            <span class="video-category">
+                                Dasar Kebugaran
+                            </span>
+
+                            <span class="video-number">02</span>
+
+                            <button
+                                type="button"
+                                class="play-button video-play-trigger"
+                                aria-label="Tonton Pemanasan Sebelum Olahraga"
+                                data-title="Pemanasan Sebelum Olahraga"
+                            >
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="video-card-body">
+
+                            <div class="video-card-top">
+                                <span class="video-level">DASAR</span>
+                                <span class="video-duration">⏱ 10 Menit</span>
+                            </div>
+
+                            <h3>Pemanasan Sebelum Olahraga</h3>
+
+                            <p>
+                                Kenali gerakan pemanasan dan persiapan tubuh
+                                sebelum melakukan aktivitas fisik atau tes
+                                kebugaran jasmani.
+                            </p>
+
+                            <div class="video-progress">
+                                <div class="video-progress-label">
+                                    <span>Video 2 dari 7</span>
+                                    <strong>28%</strong>
+                                </div>
+
+                                <div class="video-progress-line">
+                                    <span style="width: 28%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="video-footer">
+                                <span class="video-topic">
+                                    🔥 Persiapan aktivitas
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="video-button video-play-trigger"
+                                    data-title="Pemanasan Sebelum Olahraga"
+                                >
+                                    Tonton Video <span>→</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- VIDEO 3 -->
+                    <article
+                        class="video-card"
+                        data-title="Hand and Eye Coordination Test"
+                        data-category="Tes Kebugaran"
+                        data-video="https://youtu.be/cdIhvwP1824?si=BJgOo0duPNvTwTKr"
+                    >
+
+                        <div class="video-thumbnail">
+
+                            <img
+                                class="youtube-thumbnail"
+                                src=""
+                                alt="Thumbnail Hand and Eye Coordination Test"
+                                loading="lazy"
+                            >
+
+                            <div class="video-thumbnail-overlay"></div>
+
+                            <span class="video-category">Tes Kebugaran</span>
+                            <span class="video-number">03</span>
+
+                            <button
+                                type="button"
+                                class="play-button video-play-trigger"
+                                aria-label="Tonton Hand and Eye Coordination Test"
+                                data-title="Hand and Eye Coordination Test"
+                            >
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="video-card-body">
+
+                            <div class="video-card-top">
+                                <span class="video-level blue">TES</span>
+                                <span class="video-duration">⏱ 10 Menit</span>
+                            </div>
+
+                            <h3>Hand and Eye Coordination Test</h3>
+
+                            <p>
+                                Pelajari cara melakukan tes koordinasi mata
+                                dan tangan untuk melatih serta mengukur
+                                koordinasi gerak.
+                            </p>
+
+                            <div class="video-progress">
+                                <div class="video-progress-label">
+                                    <span>Video 3 dari 7</span>
+                                    <strong>42%</strong>
+                                </div>
+
+                                <div class="video-progress-line">
+                                    <span style="width: 42%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="video-footer">
+                                <span class="video-topic">
+                                    👋 Koordinasi
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="video-button video-play-trigger"
+                                    data-title="Hand and Eye Coordination Test"
+                                >
+                                    Tonton Video <span>→</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- VIDEO 4 -->
+                    <article
+                        class="video-card"
+                        data-title="Sit Up Test"
+                        data-category="Tes Kebugaran"
+                        data-video="https://youtu.be/cQwV3Oz1j5Y?si=7_J1467_F5iKIjGB"
+                    >
+
+                        <div class="video-thumbnail">
+
+                            <img
+                                class="youtube-thumbnail"
+                                src=""
+                                alt="Thumbnail Sit Up Test"
+                                loading="lazy"
+                            >
+
+                            <div class="video-thumbnail-overlay"></div>
+
+                            <span class="video-category">Tes Kebugaran</span>
+                            <span class="video-number">04</span>
+
+                            <button
+                                type="button"
+                                class="play-button video-play-trigger"
+                                aria-label="Tonton Sit Up Test"
+                                data-title="Sit Up Test"
+                            >
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="video-card-body">
+
+                            <div class="video-card-top">
+                                <span class="video-level yellow">TES</span>
+                                <span class="video-duration">⏱ 10 Menit</span>
+                            </div>
+
+                            <h3>Sit Up Test</h3>
+
+                            <p>
+                                Pelajari posisi awal, teknik gerakan, dan
+                                tata cara pelaksanaan Sit Up Test dengan
+                                gerakan yang benar.
+                            </p>
+
+                            <div class="video-progress">
+                                <div class="video-progress-label">
+                                    <span>Video 4 dari 7</span>
+                                    <strong>56%</strong>
+                                </div>
+
+                                <div class="video-progress-line">
+                                    <span style="width: 56%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="video-footer">
+                                <span class="video-topic">
+                                    💪 Kekuatan otot perut
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="video-button video-play-trigger"
+                                    data-title="Sit Up Test"
+                                >
+                                    Tonton Video <span>→</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- VIDEO 5 -->
+                    <article
+                        class="video-card"
+                        data-title="Standing Broad Jump Test"
+                        data-category="Tes Kebugaran"
+                        data-video="https://youtu.be/rorHKEzhrlM?si=pMfjZW_XrX4yWYLe"
+                    >
+
+                        <div class="video-thumbnail">
+
+                            <img
+                                class="youtube-thumbnail"
+                                src=""
+                                alt="Thumbnail Standing Broad Jump Test"
+                                loading="lazy"
+                            >
+
+                            <div class="video-thumbnail-overlay"></div>
+
+                            <span class="video-category">Tes Kebugaran</span>
+                            <span class="video-number">05</span>
+
+                            <button
+                                type="button"
+                                class="play-button video-play-trigger"
+                                aria-label="Tonton Standing Broad Jump Test"
+                                data-title="Standing Broad Jump Test"
+                            >
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="video-card-body">
+
+                            <div class="video-card-top">
+                                <span class="video-level blue">TES</span>
+                                <span class="video-duration">⏱ 15 Menit</span>
+                            </div>
+
+                            <h3>Standing Broad Jump Test</h3>
+
+                            <p>
+                                Pelajari teknik lompat jauh tanpa awalan
+                                untuk mengukur daya ledak otot tungkai.
+                            </p>
+
+                            <div class="video-progress">
+                                <div class="video-progress-label">
+                                    <span>Video 5 dari 7</span>
+                                    <strong>70%</strong>
+                                </div>
+
+                                <div class="video-progress-line">
+                                    <span style="width: 70%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="video-footer">
+                                <span class="video-topic">
+                                    🦵 Daya ledak otot tungkai
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="video-button video-play-trigger"
+                                    data-title="Standing Broad Jump Test"
+                                >
+                                    Tonton Video <span>→</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- VIDEO 6 -->
+                    <article
+                        class="video-card"
+                        data-title="T Test Kelincahan"
+                        data-category="Tes Kebugaran"
+                        data-video="https://youtu.be/C-yyJBhyEig?si=tLcBLwkZ0nQAxqAQ"
+                    >
+
+                        <div class="video-thumbnail">
+
+                            <img
+                                class="youtube-thumbnail"
+                                src=""
+                                alt="Thumbnail T Test Kelincahan"
+                                loading="lazy"
+                            >
+
+                            <div class="video-thumbnail-overlay"></div>
+
+                            <span class="video-category">Tes Kebugaran</span>
+                            <span class="video-number">06</span>
+
+                            <button
+                                type="button"
+                                class="play-button video-play-trigger"
+                                aria-label="Tonton T Test Kelincahan"
+                                data-title="T Test Kelincahan"
+                            >
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="video-card-body">
+
+                            <div class="video-card-top">
+                                <span class="video-level yellow">TES</span>
+                                <span class="video-duration">⏱ 15 Menit</span>
+                            </div>
+
+                            <h3>T Test Kelincahan</h3>
+
+                            <p>
+                                Pelajari lintasan dan teknik perubahan arah
+                                dalam T Test untuk mengukur kelincahan.
+                            </p>
+
+                            <div class="video-progress">
+                                <div class="video-progress-label">
+                                    <span>Video 6 dari 7</span>
+                                    <strong>84%</strong>
+                                </div>
+
+                                <div class="video-progress-line">
+                                    <span style="width: 84%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="video-footer">
+                                <span class="video-topic">
+                                    ⚡ Kelincahan
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="video-button video-play-trigger"
+                                    data-title="T Test Kelincahan"
+                                >
+                                    Tonton Video <span>→</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- VIDEO 7 -->
+                    <article
+                        class="video-card"
+                        data-title="Beep Test Daya Tahan"
+                        data-category="Tes Kebugaran"
+                        data-video="https://youtu.be/Smihh59pR0U?si=Klby81rATkweDSPi"
+                    >
+
+                        <div class="video-thumbnail">
+
+                            <img
+                                class="youtube-thumbnail"
+                                src=""
+                                alt="Thumbnail Beep Test Daya Tahan"
+                                loading="lazy"
+                            >
+
+                            <div class="video-thumbnail-overlay"></div>
+
+                            <span class="video-category">Tes Kebugaran</span>
+                            <span class="video-number">07</span>
+
+                            <button
+                                type="button"
+                                class="play-button video-play-trigger"
+                                aria-label="Tonton Beep Test Daya Tahan"
+                                data-title="Beep Test Daya Tahan"
+                            >
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="video-card-body">
+
+                            <div class="video-card-top">
+                                <span class="video-level blue">TES</span>
+                                <span class="video-duration">⏱ 15 Menit</span>
+                            </div>
+
+                            <h3>Beep Test Daya Tahan</h3>
+
+                            <p>
+                                Pelajari prosedur Beep Test, cara mengikuti
+                                irama bunyi beep, dan pentingnya daya tahan
+                                kardiorespirasi.
+                            </p>
+
+                            <div class="video-progress">
+                                <div class="video-progress-label">
+                                    <span>Video 7 dari 7</span>
+                                    <strong>100%</strong>
+                                </div>
+
+                                <div class="video-progress-line">
+                                    <span style="width: 100%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="video-footer">
+                                <span class="video-topic">
+                                    🫁 Daya tahan
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="video-button video-play-trigger"
+                                    data-title="Beep Test Daya Tahan"
+                                >
+                                    Tonton Video <span>→</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- PESAN KETIKA PENCARIAN TIDAK MENEMUKAN VIDEO -->
+                <div
+                    class="empty-state"
+                    id="emptyState"
+                    hidden
+                >
+                    <div class="empty-icon">🎥</div>
+                    <h3>Video tidak ditemukan</h3>
+                    <p>
+                        Coba gunakan kata kunci lain atau pilih kategori
+                        video yang berbeda.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- TIPS BELAJAR -->
+            <section class="video-tip">
+
+                <div class="video-tip-icon">💡</div>
+
+                <div class="video-tip-content">
+                    <span>TIPS BELAJAR</span>
+
+                    <h3>Tonton video sebelum melakukan tes</h3>
+
+                    <p>
+                        Perhatikan posisi awal, teknik gerakan, aturan,
+                        dan prosedur pelaksanaan agar kamu lebih siap
+                        saat melakukan praktik kebugaran jasmani.
+                    </p>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- ==================== MODAL PEMUTAR VIDEO ==================== -->
+    <div
+        class="video-modal"
+        id="videoModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="video-modal-overlay"
+            id="videoModalOverlay"
+        ></div>
+
+        <div
+            class="video-modal-box"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="videoModalTitle"
+        >
+
+            <div class="video-modal-header">
+
+                <div>
+                    <span class="video-modal-label">
+                        🎥 VIDEO PEMBELAJARAN
+                    </span>
+
+                    <h2 id="videoModalTitle">Video Pembelajaran</h2>
+                </div>
+
+                <button
+                    type="button"
+                    class="video-modal-close"
+                    id="videoModalClose"
+                    aria-label="Tutup pemutar video"
+                >
+                    ✕
+                </button>
+
+            </div>
+
+            <div class="video-player-wrapper">
+
+                <!-- Pemutar YouTube -->
+                <iframe
+                    id="youtubePlayer"
+                    title="Pemutar video YouTube"
+                    src=""
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    style="display: none;"
+                ></iframe>
+
+                <!-- Pemutar video lokal jika digunakan -->
+                <video
+                    id="videoPlayer"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    style="display: none;"
+                >
+                    Browser Anda tidak mendukung pemutar video.
+                </video>
+
+                <div
+                    class="video-player-empty"
+                    id="videoPlayerEmpty"
+                >
+                    <div class="video-player-empty-icon">🎬</div>
+                    <h3>Video belum tersedia</h3>
+                    <p>Video akan ditampilkan setelah URL diatur.</p>
+                </div>
+
+            </div>
+
+            <div class="video-modal-footer">
+                <span>📚 Aplikasi Kebugaran</span>
+                <span>UPT SPF SMP Negeri 30 Makassar</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript terpisah -->
+    <script type="module" src="video.js"></script>
+
+</body>
+</html>

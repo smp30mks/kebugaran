@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Kelas & Angkatan - Portal Guru</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="kelas.css"
+    >
+
+
+    <!-- =====================================================
+         CHART.JS
+    ====================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/chart.js"
+    ></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+
+        <!-- =================================================
+             SIDEBAR DECORATION
+        ================================================== -->
+
+        <div
+            class="sidebar-background-circle circle-one"
+        ></div>
+
+        <div
+            class="sidebar-background-circle circle-two"
+        ></div>
+
+
+
+        <!-- =================================================
+             SIDEBAR HEADER
+        ================================================== -->
+
+        <div class="sidebar-header">
+
+
+            <div class="logo-box">
+
+                <img
+                    src="../assets/logo.jpeg"
+                    alt="Logo UPT SPF SMP Negeri 30 Makassar"
+                >
+
+            </div>
+
+
+            <div class="brand">
+
+                <h2>
+                    Kebugaran
+                </h2>
+
+                <span>
+                    Portal Guru
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             SIDEBAR MENU
+        ================================================== -->
+
+        <nav
+            class="menu"
+            aria-label="Menu utama"
+        >
+
+
+            <!-- DASHBOARD -->
+
+            <a
+                href="dashboard.html"
+                class="menu-item"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    🏠
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+
+            <!-- DATA MURID -->
+
+            <a
+                href="siswa.html"
+                class="menu-item"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    👨‍🎓
+                </span>
+
+                <span>
+                    Data Murid
+                </span>
+
+            </a>
+
+
+
+            <!-- KELAS -->
+
+            <a
+                href="kelas.html"
+                class="menu-item active"
+                aria-current="page"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    🏫
+                </span>
+
+                <span>
+                    Kelas & Angkatan
+                </span>
+
+            </a>
+
+
+
+            <!-- MATERI -->
+
+            <a
+                href="materi.html"
+                class="menu-item"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    📚
+                </span>
+
+                <span>
+                    Materi
+                </span>
+
+            </a>
+
+
+
+            <!-- VIDEO -->
+
+            <a
+                href="video.html"
+                class="menu-item"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    🎥
+                </span>
+
+                <span>
+                    Video
+                </span>
+
+            </a>
+
+
+
+            <!-- TES -->
+
+            <a
+                href="tes.html"
+                class="menu-item"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    🏃
+                </span>
+
+                <span>
+                    Tes Kebugaran
+                </span>
+
+            </a>
+
+
+
+            <!-- HASIL -->
+
+            <a
+                href="hasil.html"
+                class="menu-item"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    📊
+                </span>
+
+                <span>
+                    Hasil & Nilai
+                </span>
+
+            </a>
+
+
+
+            <!-- LAPORAN -->
+
+            <a
+                href="laporan.html"
+                class="menu-item"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    📄
+                </span>
+
+                <span>
+                    Laporan
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- =================================================
+             SIDEBAR FOOTER
+        ================================================== -->
+
+        <div class="sidebar-footer">
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+                type="button"
+            >
+
+                <span
+                    class="menu-icon"
+                    aria-hidden="true"
+                >
+                    🚪
+                </span>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <div class="topbar-left">
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Buka menu"
+                    aria-controls="sidebar"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+
+
+                <!-- PAGE TITLE -->
+
+                <div class="page-title">
+
+                    <h1>
+                        Kelas & Angkatan
+                    </h1>
+
+                    <p>
+                        Pengelompokan murid berdasarkan kelas dan tahun ajaran
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROFILE GURU
+            ================================================== -->
+
+            <div class="top-profile">
+
+
+                <div class="top-profile-photo">
+
+
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto Guru"
+                    >
+
+
+                    <div
+                        class="top-profile-placeholder"
+                        id="topProfilePlaceholder"
+                        aria-hidden="true"
+                    >
+                        👨‍🏫
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="top-profile-info">
+
+
+                    <strong id="topUserName">
+                        Guru
+                    </strong>
+
+
+                    <span>
+                        Portal Guru
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =====================================================
+             CONTENT
+        ====================================================== -->
+
+        <section class="content">
+
+
+
+            <!-- =================================================
+                 PAGE HERO
+            ================================================== -->
+
+            <section class="page-hero">
+
+
+                <!-- DECORATION -->
+
+                <div
+                    class="hero-decoration hero-circle-one"
+                ></div>
+
+
+                <div
+                    class="hero-decoration hero-circle-two"
+                ></div>
+
+
+
+                <!-- HERO CONTENT -->
+
+                <div class="hero-content">
+
+
+                    <span class="hero-label">
+                        KELAS & ANGKATAN
+                    </span>
+
+
+                    <h2>
+                        Kelompok Kelas Murid
+                    </h2>
+
+
+                    <p>
+                        Lihat jumlah murid berdasarkan kelas
+                        dan tahun ajaran. Gunakan filter untuk
+                        melihat kelompok kelas tertentu.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- HERO ICON -->
+
+                <div
+                    class="hero-icon"
+                    aria-hidden="true"
+                >
+                    🏫
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 FILTER CARD
+            ================================================== -->
+
+            <section class="filter-card">
+
+
+                <div class="filter-header">
+
+
+                    <div>
+
+                        <span class="card-label">
+                            FILTER DATA
+                        </span>
+
+
+                        <h3>
+                            Pilih Kelompok
+                        </h3>
+
+
+                        <p>
+                            Pilih tahun ajaran dan kelas
+                            untuk melihat data yang sesuai.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FILTER AREA
+                ================================================== -->
+
+                <div class="filter-area">
+
+
+                    <!-- TAHUN AJARAN -->
+
+                    <div class="select-wrapper">
+
+
+                        <span
+                            class="select-icon"
+                            aria-hidden="true"
+                        >
+                            📅
+                        </span>
+
+
+                        <select
+                            id="filterTahun"
+                            aria-label="Filter tahun ajaran"
+                        >
+
+                            <option value="">
+                                Semua Tahun Ajaran
+                            </option>
+
+                        </select>
+
+
+                    </div>
+
+
+
+                    <!-- KELAS -->
+
+                    <div class="select-wrapper">
+
+
+                        <span
+                            class="select-icon"
+                            aria-hidden="true"
+                        >
+                            🏫
+                        </span>
+
+
+                        <select
+                            id="filterKelas"
+                            aria-label="Filter kelas"
+                        >
+
+                            <option value="">
+                                Semua Kelas
+                            </option>
+
+
+
+                            <!-- =================================
+                                 KELAS 7
+                            ================================== -->
+
+                            <optgroup label="Kelas 7">
+
+                                <option value="7.1">
+                                    7.1
+                                </option>
+
+                                <option value="7.2">
+                                    7.2
+                                </option>
+
+                                <option value="7.3">
+                                    7.3
+                                </option>
+
+                                <option value="7.4">
+                                    7.4
+                                </option>
+
+                                <option value="7.5">
+                                    7.5
+                                </option>
+
+                                <option value="7.6">
+                                    7.6
+                                </option>
+
+                                <option value="7.7">
+                                    7.7
+                                </option>
+
+                                <option value="7.8">
+                                    7.8
+                                </option>
+
+                                <option value="7.9">
+                                    7.9
+                                </option>
+
+                                <option value="7.10">
+                                    7.10
+                                </option>
+
+                            </optgroup>
+
+
+
+                            <!-- =================================
+                                 KELAS 8
+                            ================================== -->
+
+                            <optgroup label="Kelas 8">
+
+                                <option value="8.1">
+                                    8.1
+                                </option>
+
+                                <option value="8.2">
+                                    8.2
+                                </option>
+
+                                <option value="8.3">
+                                    8.3
+                                </option>
+
+                                <option value="8.4">
+                                    8.4
+                                </option>
+
+                                <option value="8.5">
+                                    8.5
+                                </option>
+
+                                <option value="8.6">
+                                    8.6
+                                </option>
+
+                                <option value="8.7">
+                                    8.7
+                                </option>
+
+                                <option value="8.8">
+                                    8.8
+                                </option>
+
+                                <option value="8.9">
+                                    8.9
+                                </option>
+
+                                <option value="8.10">
+                                    8.10
+                                </option>
+
+                            </optgroup>
+
+
+
+                            <!-- =================================
+                                 KELAS 9
+                            ================================== -->
+
+                            <optgroup label="Kelas 9">
+
+                                <option value="9.1">
+                                    9.1
+                                </option>
+
+                                <option value="9.2">
+                                    9.2
+                                </option>
+
+                                <option value="9.3">
+                                    9.3
+                                </option>
+
+                                <option value="9.4">
+                                    9.4
+                                </option>
+
+                                <option value="9.5">
+                                    9.5
+                                </option>
+
+                                <option value="9.6">
+                                    9.6
+                                </option>
+
+                                <option value="9.7">
+                                    9.7
+                                </option>
+
+                                <option value="9.8">
+                                    9.8
+                                </option>
+
+                                <option value="9.9">
+                                    9.9
+                                </option>
+
+                                <option value="9.10">
+                                    9.10
+                                </option>
+
+                            </optgroup>
+
+
+                        </select>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FILTER INFO
+                ================================================== -->
+
+                <div
+                    class="filter-info"
+                    id="filterInfo"
+                >
+                    Menampilkan seluruh data murid
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SUMMARY GRID
+            ================================================== -->
+
+            <section
+                class="summary-grid"
+                aria-label="Ringkasan data"
+            >
+
+
+                <!-- TOTAL MURID -->
+
+                <div class="summary-card">
+
+
+                    <div
+                        class="summary-icon student-icon"
+                        aria-hidden="true"
+                    >
+                        👨‍🎓
+                    </div>
+
+
+                    <div class="summary-info">
+
+                        <span>
+                            Total Murid
+                        </span>
+
+                        <h3 id="totalSiswa">
+                            0
+                        </h3>
+
+                        <small>
+                            Sesuai filter
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- TOTAL KELAS -->
+
+                <div class="summary-card">
+
+
+                    <div
+                        class="summary-icon class-icon"
+                        aria-hidden="true"
+                    >
+                        🏫
+                    </div>
+
+
+                    <div class="summary-info">
+
+                        <span>
+                            Total Kelas
+                        </span>
+
+                        <h3 id="totalKelas">
+                            0
+                        </h3>
+
+                        <small>
+                            Kelas yang memiliki murid
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- TOTAL TAHUN -->
+
+                <div class="summary-card">
+
+
+                    <div
+                        class="summary-icon year-icon"
+                        aria-hidden="true"
+                    >
+                        📅
+                    </div>
+
+
+                    <div class="summary-info">
+
+                        <span>
+                            Tahun Ajaran
+                        </span>
+
+                        <h3 id="totalTahun">
+                            0
+                        </h3>
+
+                        <small>
+                            Tahun tersedia
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CHART
+            ================================================== -->
+
+            <section class="chart-card">
+
+
+                <div class="card-header">
+
+
+                    <div>
+
+                        <span class="card-label">
+                            STATISTIK KELAS
+                        </span>
+
+
+                        <h3>
+                            Jumlah Murid per Kelas
+                        </h3>
+
+
+                        <p>
+                            Grafik jumlah murid berdasarkan kelas
+                            dan tahun ajaran yang dipilih.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- TOTAL GRAFIK -->
+
+                    <div class="chart-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="chartTotal">
+                            0
+                        </strong>
+
+                        <small>
+                            Murid
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CHART WRAPPER
+                ================================================== -->
+
+                <div class="chart-wrapper">
+
+                    <canvas
+                        id="classChart"
+                        aria-label="Grafik jumlah murid per kelas"
+                    ></canvas>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CLASS GRID
+            ================================================== -->
+
+            <section class="class-card">
+
+
+                <div class="card-header">
+
+
+                    <div>
+
+                        <span class="card-label">
+                            KELOMPOK KELAS
+                        </span>
+
+
+                        <h3>
+                            Daftar Kelas
+                        </h3>
+
+
+                        <p>
+                            Jumlah murid pada setiap kelas.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- CLASS GRID -->
+
+                <div
+                    class="class-grid"
+                    id="classGrid"
+                >
+
+
+                    <div class="class-empty">
+                        Memuat data kelas...
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 STUDENT TABLE
+            ================================================== -->
+
+            <section class="data-card">
+
+
+                <div class="card-header">
+
+
+                    <div>
+
+                        <span class="card-label">
+                            DATA MURID
+                        </span>
+
+
+                        <h3>
+                            Daftar Murid
+                        </h3>
+
+
+                        <p>
+                            Data murid berdasarkan filter
+                            yang dipilih.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     TABLE
+                ================================================== -->
+
+                <div class="table-wrapper">
+
+
+                    <table>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    No
+                                </th>
+
+                                <th>
+                                    Nama Murid
+                                </th>
+
+                                <th>
+                                    NISN
+                                </th>
+
+                                <th>
+                                    Kelas
+                                </th>
+
+                                <th>
+                                    Tahun Ajaran
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+
+                        <tbody
+                            id="siswaTableBody"
+                        >
+
+
+                            <tr>
+
+                                <td
+                                    colspan="5"
+                                    class="empty-state"
+                                >
+                                    Memuat data murid...
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+
+                    </table>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     TABLE FOOTER
+                ================================================== -->
+
+                <div class="table-footer">
+
+                    <span id="tableInfo">
+                        Menampilkan 0 murid
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="kelas.js"
+    ></script>
+
+
+</body>
+
+</html>

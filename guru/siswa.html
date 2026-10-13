@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Data Murid - Portal Guru</title>
+
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="siswa.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+
+        <!-- DEKORASI SIDEBAR -->
+
+        <div
+            class="sidebar-background-circle circle-one"
+        ></div>
+
+        <div
+            class="sidebar-background-circle circle-two"
+        ></div>
+
+
+
+        <!-- =================================================
+             SIDEBAR HEADER
+        ================================================== -->
+
+        <div class="sidebar-header">
+
+
+            <div class="logo-box">
+
+                <img
+                    src="../assets/logo.jpeg"
+                    alt="Logo"
+                >
+
+            </div>
+
+
+            <div class="brand">
+
+                <h2>
+                    Kebugaran
+                </h2>
+
+                <span>
+                    Portal Guru
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             MENU
+        ================================================== -->
+
+        <nav class="menu">
+
+
+            <!-- DASHBOARD -->
+
+            <a
+                href="dashboard.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏠
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+
+            <!-- DATA MURID -->
+
+            <a
+                href="siswa.html"
+                class="menu-item active"
+            >
+
+                <span class="menu-icon">
+                    👨‍🎓
+                </span>
+
+                <span>
+                    Data Murid
+                </span>
+
+            </a>
+
+
+
+            <!-- MATERI -->
+
+            <a
+                href="materi.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📚
+                </span>
+
+                <span>
+                    Materi
+                </span>
+
+            </a>
+
+
+
+            <!-- VIDEO -->
+
+            <a
+                href="video.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🎥
+                </span>
+
+                <span>
+                    Video
+                </span>
+
+            </a>
+
+
+
+            <!-- TES -->
+
+            <a
+                href="tes.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏃
+                </span>
+
+                <span>
+                    Tes Kebugaran
+                </span>
+
+            </a>
+
+
+
+            <!-- HASIL -->
+
+            <a
+                href="hasil.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📊
+                </span>
+
+                <span>
+                    Hasil & Nilai
+                </span>
+
+            </a>
+
+
+
+            <!-- LAPORAN -->
+
+            <a
+                href="laporan.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📄
+                </span>
+
+                <span>
+                    Laporan
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- =================================================
+             LOGOUT
+        ================================================== -->
+
+        <div class="sidebar-footer">
+
+
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+
+                <span class="menu-icon">
+                    🚪
+                </span>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         SIDEBAR OVERLAY
+    ====================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <div class="topbar-left">
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    type="button"
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Buka menu"
+                >
+                    ☰
+                </button>
+
+
+                <!-- PAGE TITLE -->
+
+                <div class="page-title">
+
+                    <h1>
+                        Data Murid
+                    </h1>
+
+                    <p>
+                        Daftar seluruh murid yang terdaftar
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROFILE GURU
+            ================================================== -->
+
+            <div class="top-profile">
+
+
+                <div class="top-profile-photo">
+
+
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto Guru"
+                    >
+
+
+                    <div
+                        class="top-profile-placeholder"
+                        id="topProfilePlaceholder"
+                    >
+                        👨‍🏫
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="top-profile-info">
+
+
+                    <strong id="topUserName">
+                        Guru
+                    </strong>
+
+
+                    <span>
+                        Portal Guru
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =====================================================
+             CONTENT
+        ====================================================== -->
+
+        <section class="content">
+
+
+
+            <!-- =================================================
+                 PAGE HERO
+            ================================================== -->
+
+            <section class="page-hero">
+
+
+                <!-- DEKORASI -->
+
+                <div
+                    class="hero-decoration hero-circle-one"
+                ></div>
+
+                <div
+                    class="hero-decoration hero-circle-two"
+                ></div>
+
+
+
+                <!-- TEXT -->
+
+                <div class="hero-content">
+
+
+                    <span class="hero-label">
+                        DATA MURID
+                    </span>
+
+
+                    <h2>
+                        Kelola Data Murid
+                    </h2>
+
+
+                    <p>
+                        Lihat data murid yang terdaftar,
+                        cari berdasarkan nama atau NISN,
+                        serta gunakan filter kelas dan
+                        tahun ajaran.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- ICON -->
+
+                <div class="hero-icon">
+                    👨‍🎓
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SUMMARY
+            ================================================== -->
+
+            <section class="summary-card">
+
+
+                <div class="summary-icon">
+                    👨‍🎓
+                </div>
+
+
+                <div class="summary-info">
+
+
+                    <span>
+                        Total Murid
+                    </span>
+
+
+                    <h3 id="totalSiswa">
+                        0
+                    </h3>
+
+
+                    <small>
+                        Murid terdaftar
+                    </small>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 DATA CARD
+            ================================================== -->
+
+            <section class="data-card">
+
+
+
+                <!-- CARD HEADER -->
+
+                <div class="card-header">
+
+
+                    <div>
+
+
+                        <span class="card-label">
+                            DAFTAR DATA
+                        </span>
+
+
+                        <h3>
+                            Daftar Murid
+                        </h3>
+
+
+                        <p>
+                            Gunakan pencarian dan filter
+                            untuk menemukan data murid.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FILTER
+                ================================================== -->
+
+                <div class="filter-area">
+
+
+
+                    <!-- SEARCH -->
+
+                    <div class="search-box">
+
+
+                        <span class="search-icon">
+                            🔍
+                        </span>
+
+
+                        <input
+                            type="text"
+                            id="searchSiswa"
+                            placeholder="Cari nama atau NISN..."
+                            autocomplete="off"
+                        >
+
+
+                    </div>
+
+
+
+                    <!-- FILTER KELAS -->
+
+                    <div class="select-wrapper">
+
+
+                        <span class="select-icon">
+                            🏫
+                        </span>
+
+
+                        <select id="filterKelas">
+
+
+                            <option value="">
+                                Semua Kelas
+                            </option>
+
+
+
+                            <!-- =========================
+                                 KELAS 7
+                            ========================== -->
+
+                            <optgroup label="Kelas 7">
+
+                                <option value="7.1">
+                                    7.1
+                                </option>
+
+                                <option value="7.2">
+                                    7.2
+                                </option>
+
+                                <option value="7.3">
+                                    7.3
+                                </option>
+
+                                <option value="7.4">
+                                    7.4
+                                </option>
+
+                                <option value="7.5">
+                                    7.5
+                                </option>
+
+                                <option value="7.6">
+                                    7.6
+                                </option>
+
+                                <option value="7.7">
+                                    7.7
+                                </option>
+
+                                <option value="7.8">
+                                    7.8
+                                </option>
+
+                                <option value="7.9">
+                                    7.9
+                                </option>
+
+                                <option value="7.10">
+                                    7.10
+                                </option>
+
+                            </optgroup>
+
+
+
+                            <!-- =========================
+                                 KELAS 8
+                            ========================== -->
+
+                            <optgroup label="Kelas 8">
+
+                                <option value="8.1">
+                                    8.1
+                                </option>
+
+                                <option value="8.2">
+                                    8.2
+                                </option>
+
+                                <option value="8.3">
+                                    8.3
+                                </option>
+
+                                <option value="8.4">
+                                    8.4
+                                </option>
+
+                                <option value="8.5">
+                                    8.5
+                                </option>
+
+                                <option value="8.6">
+                                    8.6
+                                </option>
+
+                                <option value="8.7">
+                                    8.7
+                                </option>
+
+                                <option value="8.8">
+                                    8.8
+                                </option>
+
+                                <option value="8.9">
+                                    8.9
+                                </option>
+
+                                <option value="8.10">
+                                    8.10
+                                </option>
+
+                            </optgroup>
+
+
+
+                            <!-- =========================
+                                 KELAS 9
+                            ========================== -->
+
+                            <optgroup label="Kelas 9">
+
+                                <option value="9.1">
+                                    9.1
+                                </option>
+
+                                <option value="9.2">
+                                    9.2
+                                </option>
+
+                                <option value="9.3">
+                                    9.3
+                                </option>
+
+                                <option value="9.4">
+                                    9.4
+                                </option>
+
+                                <option value="9.5">
+                                    9.5
+                                </option>
+
+                                <option value="9.6">
+                                    9.6
+                                </option>
+
+                                <option value="9.7">
+                                    9.7
+                                </option>
+
+                                <option value="9.8">
+                                    9.8
+                                </option>
+
+                                <option value="9.9">
+                                    9.9
+                                </option>
+
+                                <option value="9.10">
+                                    9.10
+                                </option>
+
+                            </optgroup>
+
+
+                        </select>
+
+
+                    </div>
+
+
+
+                    <!-- FILTER TAHUN AJARAN -->
+
+                    <div class="select-wrapper">
+
+
+                        <span class="select-icon">
+                            📅
+                        </span>
+
+
+                        <select id="filterTahun">
+
+
+                            <option value="">
+                                Semua Tahun Ajaran
+                            </option>
+
+
+                        </select>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FILTER STATUS
+                ================================================== -->
+
+                <div
+                    class="filter-status"
+                    id="filterStatus"
+                >
+
+                    Menampilkan seluruh
+                    data murid
+
+                </div>
+
+
+
+                <!-- =================================================
+                     TABLE
+                ================================================== -->
+
+                <div class="table-wrapper">
+
+
+                    <table>
+
+
+                        <thead>
+
+
+                            <tr>
+
+
+                                <th>
+                                    No
+                                </th>
+
+
+                                <th>
+                                    Nama Murid
+                                </th>
+
+
+                                <th>
+                                    NISN
+                                </th>
+
+
+                                <th>
+                                    Kelas
+                                </th>
+
+
+                                <th>
+                                    Tahun Ajaran
+                                </th>
+
+
+                                <th>
+                                    Status Tes
+                                </th>
+
+
+                            </tr>
+
+
+                        </thead>
+
+
+
+                        <tbody id="siswaTableBody">
+
+
+                            <tr>
+
+
+                                <td
+                                    colspan="6"
+                                    class="empty-state"
+                                >
+                                    Memuat data murid...
+                                </td>
+
+
+                            </tr>
+
+
+                        </tbody>
+
+
+                    </table>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     TABLE FOOTER
+                ================================================== -->
+
+                <div class="table-footer">
+
+
+                    <span id="tableInfo">
+                        Menampilkan 0 murid
+                    </span>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 INFORMATION
+            ================================================== -->
+
+            <section class="info-card">
+
+
+                <div class="info-icon">
+                    💡
+                </div>
+
+
+                <div class="info-content">
+
+
+                    <span class="info-label">
+                        INFORMASI
+                    </span>
+
+
+                    <h3>
+                        Status tes murid
+                    </h3>
+
+
+                    <p>
+                        Murid akan memiliki status
+                        <strong>Selesai</strong>
+                        apabila telah memiliki hasil
+                        dari lima jenis tes kebugaran.
+                    </p>
+
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script
+        type="module"
+        src="siswa.js"
+    ></script>
+
+
+</body>
+
+</html>

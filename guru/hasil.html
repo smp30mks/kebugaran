@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hasil & Nilai - Portal Guru</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="hasil.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+        <!-- SIDEBAR HEADER -->
+
+        <div class="sidebar-header">
+
+            <div class="logo-box">
+
+                <img
+                    src="../assets/logo.jpeg"
+                    alt="Logo"
+                >
+
+            </div>
+
+
+            <div class="brand">
+
+                <h2>
+                    Kebugaran
+                </h2>
+
+                <span>
+                    Portal Guru
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENU -->
+
+        <nav class="menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏠
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="siswa.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    👨‍🎓
+                </span>
+
+                <span>
+                    Data Murid
+                </span>
+
+            </a>
+
+
+            <a
+                href="materi.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📚
+                </span>
+
+                <span>
+                    Materi
+                </span>
+
+            </a>
+
+
+            <a
+                href="video.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🎥
+                </span>
+
+                <span>
+                    Video
+                </span>
+
+            </a>
+
+
+            <a
+                href="tes.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏃
+                </span>
+
+                <span>
+                    Tes Kebugaran
+                </span>
+
+            </a>
+
+
+            <a
+                href="hasil.html"
+                class="menu-item active"
+            >
+
+                <span class="menu-icon">
+                    📊
+                </span>
+
+                <span>
+                    Hasil & Nilai
+                </span>
+
+            </a>
+
+
+            <a
+                href="laporan.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📄
+                </span>
+
+                <span>
+                    Laporan
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR FOOTER -->
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+
+                <span class="menu-icon">
+                    🚪
+                </span>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         SIDEBAR OVERLAY
+    ====================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <div class="topbar-left">
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    type="button"
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Buka menu"
+                >
+                    ☰
+                </button>
+
+
+                <!-- PAGE TITLE -->
+
+                <div class="page-title">
+
+                    <h1>
+                        Hasil & Nilai
+                    </h1>
+
+                    <p>
+                        Rekap hasil tes kebugaran murid
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TOP PROFILE
+            ================================================== -->
+
+            <div class="top-profile">
+
+
+                <div class="top-profile-photo">
+
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto Profil Guru"
+                    >
+
+                    <div
+                        class="top-profile-placeholder"
+                        id="topProfilePlaceholder"
+                    >
+                        👨‍🏫
+                    </div>
+
+                </div>
+
+
+                <div class="top-profile-info">
+
+                    <strong id="topUserName">
+                        Guru
+                    </strong>
+
+                    <span>
+                        Portal Guru
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <section class="content">
+
+
+            <!-- =================================================
+                 HERO HASIL & NILAI
+            ================================================== -->
+
+            <section class="page-hero">
+
+
+                <!-- DECORATION -->
+
+                <div
+                    class="hero-decoration hero-circle-one"
+                ></div>
+
+
+                <div
+                    class="hero-decoration hero-circle-two"
+                ></div>
+
+
+
+                <!-- HERO CONTENT -->
+
+                <div class="hero-content">
+
+
+                    <span class="hero-label">
+                        HASIL & NILAI
+                    </span>
+
+
+                    <h2>
+                        Rekap Hasil Tes Kebugaran Murid
+                    </h2>
+
+
+                    <p>
+                        Lihat hasil pengukuran kebugaran murid
+                        dan rekap hasil tes berdasarkan
+                        tahun ajaran serta kelas.
+                    </p>
+
+
+
+                    <!-- HERO STATS -->
+
+                    <div class="hero-stats">
+
+
+                        <!-- TOTAL MURID -->
+
+                        <div class="hero-stat">
+
+                            <strong id="totalSiswa">
+                                0
+                            </strong>
+
+                            <span>
+                                Total Murid
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-divider"></div>
+
+
+                        <!-- TES SELESAI -->
+
+                        <div class="hero-stat">
+
+                            <strong id="totalTesSelesai">
+                                0
+                            </strong>
+
+                            <span>
+                                Tes Selesai
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-divider"></div>
+
+
+                        <!-- RATA RATA NILAI -->
+
+                        <div class="hero-stat">
+
+                            <strong id="rataNilai">
+                                0.00
+                            </strong>
+
+                            <span>
+                                Rata-rata Nilai
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- HERO ICON -->
+
+                <div class="hero-icon">
+                    📊
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 FILTER
+            ================================================== -->
+
+            <section class="filter-card">
+
+
+                <div class="filter-header">
+
+
+                    <div>
+
+                        <h3>
+                            Filter Hasil Tes
+                        </h3>
+
+                        <p>
+                            Gunakan filter untuk melihat hasil
+                            berdasarkan tahun ajaran, kelas,
+                            atau jenis tes tertentu.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="filter-area">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="search-box">
+
+                        <span>
+                            🔍
+                        </span>
+
+                        <input
+                            type="text"
+                            id="searchSiswa"
+                            placeholder="Cari nama atau NISN..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+
+                    <!-- TAHUN AJARAN -->
+
+                    <select id="filterTahun">
+
+                        <option value="">
+                            Semua Tahun Ajaran
+                        </option>
+
+                    </select>
+
+
+
+                    <!-- KELAS -->
+
+                    <select id="filterKelas">
+
+                        <option value="">
+                            Semua Kelas
+                        </option>
+
+                    </select>
+
+
+
+                    <!-- JENIS TES -->
+
+                    <select id="filterTes">
+
+                        <option value="">
+                            Semua Jenis Tes
+                        </option>
+
+                        <option value="handeye">
+                            Hand & Eye Coordination
+                        </option>
+
+                        <option value="situp">
+                            Sit Up
+                        </option>
+
+                        <option value="standingbroadjump">
+                            Standing Broad Jump
+                        </option>
+
+                        <option value="ttest">
+                            T Test
+                        </option>
+
+                        <option value="beeptest">
+                            Beep Test
+                        </option>
+
+                    </select>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 DETAIL HASIL
+            ================================================== -->
+
+            <section class="data-card">
+
+
+                <!-- HEADER -->
+
+                <div class="card-header">
+
+
+                    <div>
+
+                        <span class="section-kicker">
+                            DATA HASIL
+                        </span>
+
+
+                        <h3>
+                            Detail Hasil Tes
+                        </h3>
+
+
+                        <p>
+                            Rekap hasil tes setiap murid
+                            berdasarkan data yang tersedia.
+                        </p>
+
+                    </div>
+
+
+                    <!-- DATA COUNT -->
+
+                    <span
+                        class="data-count"
+                        id="dataCount"
+                    >
+                        0 Data
+                    </span>
+
+
+                </div>
+
+
+
+                <!-- TABLE -->
+
+                <div class="table-wrapper">
+
+
+                    <table>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    No
+                                </th>
+
+                                <th>
+                                    Nama Murid
+                                </th>
+
+                                <th>
+                                    Kelas
+                                </th>
+
+                                <th>
+                                    Tahun Ajaran
+                                </th>
+
+                                <th>
+                                    Jenis Tes
+                                </th>
+
+                                <th>
+                                    Hasil
+                                </th>
+
+                                <th>
+                                    Skor
+                                </th>
+
+                                <th>
+                                    Kategori
+                                </th>
+
+                                <th>
+                                    Aksi
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="hasilTableBody">
+
+                            <tr>
+
+                                <td
+                                    colspan="9"
+                                    class="empty-state"
+                                >
+                                    Memuat hasil tes...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+
+                    </table>
+
+
+                </div>
+
+
+
+                <!-- TABLE FOOTER -->
+
+                <div class="table-footer">
+
+                    <span id="tableInfo">
+                        Menampilkan 0 data
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         EDIT MODAL
+    ====================================================== -->
+
+    <div
+        class="edit-modal"
+        id="editModal"
+        style="display: none;"
+    >
+
+
+        <!-- OVERLAY -->
+
+        <div
+            class="edit-modal-overlay"
+            id="editModalOverlay"
+        ></div>
+
+
+
+        <!-- MODAL BOX -->
+
+        <div class="edit-modal-box">
+
+
+            <!-- MODAL HEADER -->
+
+            <div class="edit-modal-header">
+
+
+                <div>
+
+                    <span class="content-label">
+                        EDIT HASIL
+                    </span>
+
+                    <h3>
+                        Ubah Nilai Murid
+                    </h3>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="closeEditModal"
+                    class="edit-close-button"
+                    aria-label="Tutup"
+                >
+                    ×
+                </button>
+
+
+            </div>
+
+
+
+            <!-- MODAL BODY -->
+
+            <div class="edit-modal-body">
+
+
+                <!-- MURID INFO -->
+
+                <div class="edit-info-box">
+
+
+                    <div>
+
+                        <span>
+                            Nama Murid
+                        </span>
+
+                        <strong id="editNamaMurid">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            NISN
+                        </span>
+
+                        <strong id="editNisnMurid">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Kelas
+                        </span>
+
+                        <strong id="editKelasMurid">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Tahun Ajaran
+                        </span>
+
+                        <strong id="editTahunMurid">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Jenis Tes
+                        </span>
+
+                        <strong id="editJenisTes">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- HIDDEN ID -->
+
+                <input
+                    type="hidden"
+                    id="editHasilId"
+                >
+
+
+
+                <!-- HASIL -->
+
+                <div class="edit-form-group">
+
+
+                    <label for="editHasil">
+                        Hasil
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="editHasil"
+                        placeholder="Masukkan hasil tes"
+                        autocomplete="off"
+                    >
+
+
+                </div>
+
+
+
+                <!-- SKOR -->
+
+                <div class="edit-form-group">
+
+
+                    <label for="editSkor">
+                        Nilai / Skor
+                    </label>
+
+
+                    <input
+                        type="number"
+                        id="editSkor"
+                        min="1"
+                        max="5"
+                        step="1"
+                        placeholder="1 - 5"
+                    >
+
+
+                </div>
+
+
+
+                <!-- KATEGORI -->
+
+                <div class="edit-form-group">
+
+
+                    <label for="editKategori">
+                        Kategori
+                    </label>
+
+
+                    <select
+                        id="editKategori"
+                        disabled
+                    >
+
+                        <option value="">
+                            Pilih kategori
+                        </option>
+
+                        <option value="Baik Sekali">
+                            Baik Sekali
+                        </option>
+
+                        <option value="Baik">
+                            Baik
+                        </option>
+
+                        <option value="Sedang">
+                            Sedang
+                        </option>
+
+                        <option value="Kurang">
+                            Kurang
+                        </option>
+
+                        <option value="Kurang Sekali">
+                            Kurang Sekali
+                        </option>
+
+                    </select>
+
+
+                </div>
+
+
+
+                <!-- MESSAGE -->
+
+                <div
+                    id="editMessage"
+                    class="edit-message"
+                ></div>
+
+
+            </div>
+
+
+
+            <!-- MODAL FOOTER -->
+
+            <div class="edit-modal-footer">
+
+
+                <button
+                    type="button"
+                    id="cancelEditButton"
+                    class="edit-cancel-button"
+                >
+                    Batal
+                </button>
+
+
+                <button
+                    type="button"
+                    id="saveEditButton"
+                    class="edit-save-button"
+                >
+                    Simpan Perubahan
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="hasil.js"
+    ></script>
+
+
+</body>
+
+</html>

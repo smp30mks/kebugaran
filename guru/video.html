@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Guru - Aplikasi Kebugaran</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="video.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo-box">
+                <img src="../assets/logo.jpeg" alt="Logo">
+            </div>
+
+            <div class="brand">
+                <h2>Kebugaran</h2>
+                <span>Portal Guru</span>
+            </div>
+        </div>
+
+        <!-- MENU -->
+        <nav class="menu">
+
+            <a href="dashboard.html" class="menu-item">
+                <span class="menu-icon">🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="siswa.html" class="menu-item">
+                <span class="menu-icon">👨‍🎓</span>
+                <span>Data Murid</span>
+            </a>
+
+            <a href="materi.html" class="menu-item">
+                <span class="menu-icon">📚</span>
+                <span>Materi</span>
+            </a>
+
+            <a href="video.html" class="menu-item active" aria-current="page">
+                <span class="menu-icon">🎥</span>
+                <span>Video</span>
+            </a>
+
+            <a href="tes.html" class="menu-item">
+                <span class="menu-icon">🏃</span>
+                <span>Tes Kebugaran</span>
+            </a>
+
+            <a href="hasil.html" class="menu-item">
+                <span class="menu-icon">📊</span>
+                <span>Hasil &amp; Nilai</span>
+            </a>
+
+            <a href="laporan.html" class="menu-item">
+                <span class="menu-icon">📄</span>
+                <span>Laporan</span>
+            </a>
+
+        </nav>
+
+        <!-- LOGOUT -->
+        <div class="sidebar-footer">
+            <button type="button" class="logout-button" id="logoutButton">
+                <span>🚪</span>
+                <span>Logout</span>
+            </button>
+        </div>
+
+    </aside>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <button
+                    type="button"
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Buka menu"
+                    aria-controls="sidebar"
+                    aria-expanded="false"
+                >☰</button>
+
+                <div class="page-heading">
+                    <h1>Video Pembelajaran</h1>
+                    <p>Video pembelajaran PJOK dan kebugaran jasmani</p>
+                </div>
+
+            </div>
+
+            <!-- PROFIL GURU -->
+            <div class="top-profile">
+
+                <div class="top-avatar">
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto Guru"
+                        style="display: none;"
+                    >
+
+                    <div class="top-avatar-placeholder" id="topProfilePlaceholder">
+                        👨‍🏫
+                    </div>
+                </div>
+
+                <div class="top-profile-info">
+                    <strong id="topUserName">Guru</strong>
+                    <span>Portal Guru</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <section class="content video-content">
+
+            <!-- HEADER VIDEO -->
+            <section class="video-hero">
+
+                <div class="video-hero-content">
+                    <span class="section-kicker">KOLEKSI PEMBELAJARAN</span>
+
+                    <h2>Video Kebugaran Jasmani</h2>
+
+                    <p>
+                        Pelajari konsep kebugaran jasmani, pemanasan,
+                        serta tata cara pelaksanaan berbagai tes kebugaran
+                        melalui video pembelajaran.
+                    </p>
+
+                    <div class="video-hero-stats">
+                        <span>🎥 7 Video Pembelajaran</span>
+                        <span>📚 2 Kategori</span>
+                        <span>🏃 Materi PJOK</span>
+                    </div>
+                </div>
+
+                <div class="video-hero-icon" aria-hidden="true">🎬</div>
+
+            </section>
+
+            <!-- KATEGORI VIDEO -->
+            <section class="video-category-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">JELAJAHI VIDEO</span>
+                        <h2>Kategori Pembelajaran</h2>
+                        <p>Pilih kategori untuk menemukan video yang dibutuhkan.</p>
+                    </div>
+                </div>
+
+                <div class="video-category-grid">
+
+                    <button
+                        type="button"
+                        class="video-category-card active"
+                        data-category="all"
+                        aria-pressed="true"
+                    >
+                        <span class="category-icon">📚</span>
+                        <span class="category-title">Semua Video</span>
+                        <span class="category-description">Lihat seluruh koleksi video</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="video-category-card"
+                        data-category="Dasar Kebugaran"
+                        aria-pressed="false"
+                    >
+                        <span class="category-icon">💚</span>
+                        <span class="category-title">Dasar Kebugaran</span>
+                        <span class="category-description">Konsep dasar dan pemanasan</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="video-category-card"
+                        data-category="Tes Kebugaran"
+                        aria-pressed="false"
+                    >
+                        <span class="category-icon">🏃</span>
+                        <span class="category-title">Tes Kebugaran</span>
+                        <span class="category-description">Pengenalan berbagai tes fisik</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- DAFTAR VIDEO -->
+            <section class="video-list-section">
+
+                <div class="section-heading video-list-heading">
+                    <div>
+                        <span class="section-kicker">KOLEKSI VIDEO</span>
+                        <h2>Daftar Video Pembelajaran</h2>
+                        <p>Pilih video untuk menonton langsung melalui YouTube.</p>
+                    </div>
+
+                    <span class="video-count" id="videoCount">7 video</span>
+                </div>
+
+                <!-- PENCARIAN -->
+                <div class="video-search-wrapper">
+                    <span class="search-icon" aria-hidden="true">🔎</span>
+
+                    <input
+                        type="search"
+                        id="searchVideo"
+                        placeholder="Cari judul video atau materi..."
+                        aria-label="Cari video"
+                    >
+
+                    <button type="button" id="clearSearch" class="clear-search" hidden>
+                        Hapus
+                    </button>
+                </div>
+
+                <!-- GRID VIDEO -->
+                <div class="video-grid" id="videoGrid">
+
+                    <!-- VIDEO 01 -->
+                    <article class="video-card" data-category="Dasar Kebugaran">
+
+                        <a
+                            class="video-thumbnail"
+                            href="https://www.youtube.com/watch?v=64VcB8X0JNo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Tonton Pengertian Kebugaran Jasmani di YouTube"
+                        >
+                            <img
+                                src="https://img.youtube.com/vi/64VcB8X0JNo/hqdefault.jpg"
+                                alt="Thumbnail Pengertian Kebugaran Jasmani"
+                                loading="lazy"
+                            >
+                            <span class="video-play" aria-hidden="true">▶</span>
+                            <span class="video-number">01</span>
+                        </a>
+
+                        <div class="video-card-body">
+
+                            <div class="video-meta">
+                                <span class="video-category-label">Dasar Kebugaran</span>
+                                <span class="video-duration">🎥 Video</span>
+                            </div>
+
+                            <h3>Pengertian Kebugaran Jasmani</h3>
+
+                            <p>
+                                Mengenal pengertian kebugaran jasmani
+                                dan pentingnya menjaga tubuh agar tetap
+                                sehat, aktif, dan bugar.
+                            </p>
+
+                            <a
+                                class="video-button"
+                                href="https://www.youtube.com/watch?v=64VcB8X0JNo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Tonton Video ↗</a>
+
+                        </div>
+                    </article>
+
+                    <!-- VIDEO 02 -->
+                    <article class="video-card" data-category="Dasar Kebugaran">
+
+                        <a
+                            class="video-thumbnail"
+                            href="https://www.youtube.com/watch?v=vCT-ymzlgzk"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Tonton Pemanasan Sebelum Berolahraga di YouTube"
+                        >
+                            <img
+                                src="https://img.youtube.com/vi/vCT-ymzlgzk/hqdefault.jpg"
+                                alt="Thumbnail Pemanasan Sebelum Berolahraga"
+                                loading="lazy"
+                            >
+                            <span class="video-play" aria-hidden="true">▶</span>
+                            <span class="video-number">02</span>
+                        </a>
+
+                        <div class="video-card-body">
+
+                            <div class="video-meta">
+                                <span class="video-category-label">Dasar Kebugaran</span>
+                                <span class="video-duration">🎥 Video</span>
+                            </div>
+
+                            <h3>Pemanasan Sebelum Berolahraga</h3>
+
+                            <p>
+                                Mempelajari kegiatan pemanasan sebagai
+                                persiapan sebelum melakukan aktivitas
+                                fisik atau latihan.
+                            </p>
+
+                            <a
+                                class="video-button"
+                                href="https://www.youtube.com/watch?v=vCT-ymzlgzk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Tonton Video ↗</a>
+
+                        </div>
+                    </article>
+
+                    <!-- VIDEO 03 -->
+                    <article class="video-card" data-category="Tes Kebugaran">
+
+                        <a
+                            class="video-thumbnail"
+                            href="https://www.youtube.com/watch?v=cdIhvwP1824"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Tonton Hand and Eye Coordination Test di YouTube"
+                        >
+                            <img
+                                src="https://img.youtube.com/vi/cdIhvwP1824/hqdefault.jpg"
+                                alt="Thumbnail Hand and Eye Coordination Test"
+                                loading="lazy"
+                            >
+                            <span class="video-play" aria-hidden="true">▶</span>
+                            <span class="video-number">03</span>
+                        </a>
+
+                        <div class="video-card-body">
+
+                            <div class="video-meta">
+                                <span class="video-category-label">Tes Kebugaran</span>
+                                <span class="video-duration">🎥 Video</span>
+                            </div>
+
+                            <h3>Hand and Eye Coordination Test</h3>
+
+                            <p>
+                                Mengenal tes koordinasi tangan dan mata
+                                dalam rangkaian pengukuran kebugaran
+                                jasmani.
+                            </p>
+
+                            <a
+                                class="video-button"
+                                href="https://www.youtube.com/watch?v=cdIhvwP1824"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Tonton Video ↗</a>
+
+                        </div>
+                    </article>
+
+                    <!-- VIDEO 04 -->
+                    <article class="video-card" data-category="Tes Kebugaran">
+
+                        <a
+                            class="video-thumbnail"
+                            href="https://www.youtube.com/watch?v=cQwV3Oz1j5Y"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Tonton Sit Up Test di YouTube"
+                        >
+                            <img
+                                src="https://img.youtube.com/vi/cQwV3Oz1j5Y/hqdefault.jpg"
+                                alt="Thumbnail Sit Up Test"
+                                loading="lazy"
+                            >
+                            <span class="video-play" aria-hidden="true">▶</span>
+                            <span class="video-number">04</span>
+                        </a>
+
+                        <div class="video-card-body">
+
+                            <div class="video-meta">
+                                <span class="video-category-label">Tes Kebugaran</span>
+                                <span class="video-duration">🎥 Video</span>
+                            </div>
+
+                            <h3>Sit Up Test</h3>
+
+                            <p>
+                                Mempelajari pelaksanaan sit up untuk
+                                mengukur kekuatan otot perut sesuai
+                                prosedur tes yang digunakan.
+                            </p>
+
+                            <a
+                                class="video-button"
+                                href="https://www.youtube.com/watch?v=cQwV3Oz1j5Y"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Tonton Video ↗</a>
+
+                        </div>
+                    </article>
+
+                    <!-- VIDEO 05 -->
+                    <article class="video-card" data-category="Tes Kebugaran">
+
+                        <a
+                            class="video-thumbnail"
+                            href="https://www.youtube.com/watch?v=rorHKEzhrlM"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Tonton Standing Broad Jump Test di YouTube"
+                        >
+                            <img
+                                src="https://img.youtube.com/vi/rorHKEzhrlM/hqdefault.jpg"
+                                alt="Thumbnail Standing Broad Jump Test"
+                                loading="lazy"
+                            >
+                            <span class="video-play" aria-hidden="true">▶</span>
+                            <span class="video-number">05</span>
+                        </a>
+
+                        <div class="video-card-body">
+
+                            <div class="video-meta">
+                                <span class="video-category-label">Tes Kebugaran</span>
+                                <span class="video-duration">🎥 Video</span>
+                            </div>
+
+                            <h3>Standing Broad Jump Test</h3>
+
+                            <p>
+                                Mengenal tes loncat jauh tanpa awalan
+                                untuk mengukur daya ledak otot tungkai.
+                            </p>
+
+                            <a
+                                class="video-button"
+                                href="https://www.youtube.com/watch?v=rorHKEzhrlM"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Tonton Video ↗</a>
+
+                        </div>
+                    </article>
+
+                    <!-- VIDEO 06 -->
+                    <article class="video-card" data-category="Tes Kebugaran">
+
+                        <a
+                            class="video-thumbnail"
+                            href="https://www.youtube.com/watch?v=C-yyJBhyEig"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Tonton T-Test Agility di YouTube"
+                        >
+                            <img
+                                src="https://img.youtube.com/vi/C-yyJBhyEig/hqdefault.jpg"
+                                alt="Thumbnail T-Test Agility"
+                                loading="lazy"
+                            >
+                            <span class="video-play" aria-hidden="true">▶</span>
+                            <span class="video-number">06</span>
+                        </a>
+
+                        <div class="video-card-body">
+
+                            <div class="video-meta">
+                                <span class="video-category-label">Tes Kebugaran</span>
+                                <span class="video-duration">🎥 Video</span>
+                            </div>
+
+                            <h3>T-Test Agility</h3>
+
+                            <p>
+                                Mempelajari pola gerak tes T-Test yang
+                                digunakan untuk mengukur kelincahan.
+                            </p>
+
+                            <a
+                                class="video-button"
+                                href="https://www.youtube.com/watch?v=C-yyJBhyEig"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Tonton Video ↗</a>
+
+                        </div>
+                    </article>
+
+                    <!-- VIDEO 07 -->
+                    <article class="video-card" data-category="Tes Kebugaran">
+
+                        <a
+                            class="video-thumbnail"
+                            href="https://www.youtube.com/watch?v=Smihh59pR0U"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Tonton Beep Test di YouTube"
+                        >
+                            <img
+                                src="https://img.youtube.com/vi/Smihh59pR0U/hqdefault.jpg"
+                                alt="Thumbnail Beep Test"
+                                loading="lazy"
+                            >
+                            <span class="video-play" aria-hidden="true">▶</span>
+                            <span class="video-number">07</span>
+                        </a>
+
+                        <div class="video-card-body">
+
+                            <div class="video-meta">
+                                <span class="video-category-label">Tes Kebugaran</span>
+                                <span class="video-duration">🎥 Video</span>
+                            </div>
+
+                            <h3>Beep Test</h3>
+
+                            <p>
+                                Mengenal tes lari bolak-balik mengikuti
+                                irama audio untuk mengukur daya tahan
+                                aerobik.
+                            </p>
+
+                            <a
+                                class="video-button"
+                                href="https://www.youtube.com/watch?v=Smihh59pR0U"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Tonton Video ↗</a>
+
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- JIKA VIDEO TIDAK DITEMUKAN -->
+                <div class="video-empty-state" id="emptyState" hidden>
+                    <div class="empty-icon">🔎</div>
+                    <h3>Video tidak ditemukan</h3>
+                    <p>Coba gunakan kata kunci lain atau pilih kategori berbeda.</p>
+                    <button type="button" id="resetVideoFilter">Tampilkan Semua Video</button>
+                </div>
+
+            </section>
+
+            <!-- TIPS BELAJAR -->
+            <section class="learning-tip">
+
+                <div class="learning-tip-icon">💡</div>
+
+                <div>
+                    <span class="section-kicker">TIPS BELAJAR</span>
+                    <h3>Pahami materi sebelum melakukan tes</h3>
+                    <p>
+                        Perhatikan tujuan, peralatan, prosedur, dan cara
+                        penilaian setiap tes sebelum melakukan pengukuran
+                        kebugaran jasmani.
+                    </p>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script type="module" src="video.js"></script>
+
+</body>
+</html>

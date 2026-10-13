@@ -1,0 +1,3214 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Materi | Aplikasi Kebugaran
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="materi.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+        <div class="sidebar-header">
+
+            <div class="logo-wrapper">
+
+                <img
+                    src="assets/logo.jpeg"
+                    alt="Logo UPT SPF SMP Negeri 30 Makassar"
+                >
+
+            </div>
+
+
+            <div class="brand">
+
+                <h2>
+                    Kebugaran
+                </h2>
+
+                <span>
+                    Portal Murid
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             MENU
+        ================================================== -->
+
+        <nav class="sidebar-menu">
+
+
+            <a
+                href="dashboard.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏠
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="materi.html"
+                class="menu-item active"
+            >
+
+                <span class="menu-icon">
+                    📚
+                </span>
+
+                <span>
+                    Materi
+                </span>
+
+            </a>
+
+
+            <a
+                href="video.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🎥
+                </span>
+
+                <span>
+                    Video
+                </span>
+
+            </a>
+
+
+            <a
+                href="tes.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏃
+                </span>
+
+                <span>
+                    Tes Kebugaran
+                </span>
+
+            </a>
+
+
+            <a
+                href="hasil.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📊
+                </span>
+
+                <span>
+                    Hasil/Nilai
+                </span>
+
+            </a>
+
+
+            <a
+                href="profil.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    👤
+                </span>
+
+                <span>
+                    Profil
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             LOGOUT
+        ================================================== -->
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                id="logoutButton"
+            >
+
+                <span>
+                    🚪
+                </span>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+            <button
+                type="button"
+                class="menu-button"
+                id="menuButton"
+                aria-label="Buka menu"
+            >
+                ☰
+            </button>
+
+
+            <div class="page-title">
+
+                <h1>
+                    Materi
+                </h1>
+
+                <p>
+                    Materi pembelajaran PJOK
+                </p>
+
+            </div>
+
+
+            <div class="profile-mini">
+
+                <div class="profile-avatar">
+
+                    <img
+                        id="topProfilePhoto"
+                        src=""
+                        alt="Foto profil"
+                    >
+
+                    <span id="topProfilePlaceholder">
+                        👤
+                    </span>
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="topUserName">
+                        Memuat...
+                    </strong>
+
+                    <span id="topUserClass">
+                        -
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             MATERI CONTENT
+        ================================================== -->
+
+        <section class="materi-content">
+
+
+            <!-- =================================================
+                 HERO
+            ================================================== -->
+
+            <section class="materi-hero">
+
+                <div class="materi-hero-background"></div>
+
+
+                <div class="materi-hero-content">
+
+                    <span class="materi-hero-label">
+                        📚 PUSAT PEMBELAJARAN
+                    </span>
+
+
+                    <h2>
+                        Pelajari Kebugaran
+                        dari Dasar sampai Tes
+                    </h2>
+
+
+                    <p>
+                        Pelajari pengertian kebugaran jasmani,
+                        pemanasan, serta berbagai tes kebugaran
+                        yang digunakan untuk mengetahui kemampuan
+                        tubuh dan kondisi kebugaran murid.
+                    </p>
+
+
+                    <div class="materi-hero-stats">
+
+                        <div class="hero-stat">
+
+                            <strong id="heroTotalMateri">
+                                07
+                            </strong>
+
+                            <span>
+                                Materi
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                02
+                            </strong>
+
+                            <span>
+                                Materi Dasar
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                05
+                            </strong>
+
+                            <span>
+                                Tes
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     HERO VISUAL
+                ================================================== -->
+
+                <div class="materi-hero-visual">
+
+                    <div class="hero-circle large"></div>
+
+                    <div class="hero-circle medium"></div>
+
+                    <div class="hero-circle small"></div>
+
+
+                    <div class="hero-visual-card">
+                        🏃
+                    </div>
+
+
+                    <div class="hero-floating-card card-one">
+
+                        <strong>
+                            💪
+                        </strong>
+
+                        <span>
+                            Latihan
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-floating-card card-two">
+
+                        <strong>
+                            🏆
+                        </strong>
+
+                        <span>
+                            Tes
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KATEGORI
+            ================================================== -->
+
+            <section class="materi-category-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            KATEGORI
+                        </span>
+
+                        <h2>
+                            Pilih Topik Pembelajaran
+                        </h2>
+
+                    </div>
+
+
+                    <span class="section-small-text">
+                        7 materi tersedia
+                    </span>
+
+                </div>
+
+
+                <div class="category-grid">
+
+
+                    <!-- SEMUA -->
+
+                    <button
+                        type="button"
+                        class="category-card active"
+                        data-category=""
+                    >
+
+                        <span class="category-icon">
+                            📚
+                        </span>
+
+                        <span class="category-text">
+
+                            <strong>
+                                Semua Materi
+                            </strong>
+
+                            <small>
+                                7 materi
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                    <!-- DASAR -->
+
+                    <button
+                        type="button"
+                        class="category-card"
+                        data-category="Dasar Kebugaran"
+                    >
+
+                        <span class="category-icon">
+                            ❤️
+                        </span>
+
+                        <span class="category-text">
+
+                            <strong>
+                                Dasar Kebugaran
+                            </strong>
+
+                            <small>
+                                2 materi
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                    <!-- TES -->
+
+                    <button
+                        type="button"
+                        class="category-card"
+                        data-category="Tes Kebugaran"
+                    >
+
+                        <span class="category-icon">
+                            🏆
+                        </span>
+
+                        <span class="category-text">
+
+                            <strong>
+                                Tes Kebugaran
+                            </strong>
+
+                            <small>
+                                5 materi
+                            </small>
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 SEARCH
+            ================================================== -->
+
+            <section class="materi-search-card">
+
+                <div class="search-wrapper">
+
+                    <span class="search-icon">
+                        🔎
+                    </span>
+
+                    <input
+                        type="text"
+                        id="searchMateri"
+                        placeholder="Cari materi yang ingin kamu pelajari..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <div class="search-info">
+
+                    <span class="search-info-icon">
+                        📖
+                    </span>
+
+                    <span>
+
+                        <strong id="materiCount">
+                            7
+                        </strong>
+
+                        materi tersedia
+
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 DAFTAR MATERI
+            ================================================== -->
+
+            <section class="materi-list-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            KOLEKSI PEMBELAJARAN
+                        </span>
+
+                        <h2>
+                            Materi Kebugaran Jasmani
+                        </h2>
+
+                    </div>
+
+
+                    <span class="section-small-text">
+                        Pelajari secara bertahap
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="materiGrid"
+                    class="materi-grid"
+                >
+
+
+                    <!-- =================================================
+                         MATERI 1
+                    ================================================== -->
+
+                    <article
+                        class="materi-card featured"
+                        data-title="Pengertian Kebugaran Jasmani"
+                        data-category="Dasar Kebugaran"
+                    >
+
+                        <div class="materi-image">
+
+                            <img
+                                src="assets/images.jpg"
+                                alt="Pengertian Kebugaran Jasmani"
+                            >
+
+                            <div class="image-overlay"></div>
+
+                            <span class="materi-category">
+                                Dasar Kebugaran
+                            </span>
+
+                            <span class="materi-number">
+                                01
+                            </span>
+
+                            <span class="featured-badge">
+                                ⭐ MATERI AWAL
+                            </span>
+
+                        </div>
+
+
+                        <div class="materi-card-body">
+
+                            <div class="materi-card-top">
+
+                                <span class="materi-level">
+                                    🟢 DASAR
+                                </span>
+
+                                <span class="materi-duration">
+                                    ⏱ 10 Menit
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Pengertian Kebugaran Jasmani
+                            </h3>
+
+
+                            <p class="materi-description">
+                                Pelajari pengertian kebugaran
+                                jasmani dan pentingnya menjaga
+                                kondisi tubuh agar tetap sehat,
+                                aktif, dan bugar.
+                            </p>
+
+
+                            <div class="materi-progress">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Materi 1 dari 7
+                                    </span>
+
+                                    <strong>
+                                        01
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-line">
+
+                                    <span
+                                        style="width: 14%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="materi-footer">
+
+                                <span class="materi-topic">
+                                    ❤️ Dasar kebugaran
+                                </span>
+
+
+                                <div class="materi-buttons">
+
+                                    <button
+                                        type="button"
+                                        class="materi-button primary btn-baca"
+                                        data-target="materiDetail1"
+                                    >
+                                        Mulai Belajar
+                                        <span>
+                                            →
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MATERI 2
+                    ================================================== -->
+
+                    <article
+                        class="materi-card"
+                        data-title="Pemanasan"
+                        data-category="Dasar Kebugaran"
+                    >
+
+                        <div class="materi-image">
+
+                            <img
+                                src="assets/istockphoto-487495648-612x612.jpg"
+                                alt="Pemanasan"
+                            >
+
+                            <div class="image-overlay"></div>
+
+                            <span class="materi-category">
+                                Dasar Kebugaran
+                            </span>
+
+                            <span class="materi-number">
+                                02
+                            </span>
+
+                        </div>
+
+
+                        <div class="materi-card-body">
+
+                            <div class="materi-card-top">
+
+                                <span class="materi-level">
+                                    🟢 DASAR
+                                </span>
+
+                                <span class="materi-duration">
+                                    ⏱ 10 Menit
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Pemanasan
+                            </h3>
+
+
+                            <p class="materi-description">
+                                Pelajari pentingnya pemanasan
+                                sebelum melakukan aktivitas
+                                fisik atau latihan.
+                            </p>
+
+
+                            <div class="materi-progress">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Materi 2 dari 7
+                                    </span>
+
+                                    <strong>
+                                        02
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-line">
+
+                                    <span
+                                        style="width: 28%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="materi-footer">
+
+                                <span class="materi-topic">
+                                    🔥 Persiapan aktivitas
+                                </span>
+
+
+                                <div class="materi-buttons">
+
+                                    <button
+                                        type="button"
+                                        class="materi-button primary btn-baca"
+                                        data-target="materiDetail2"
+                                    >
+                                        Mulai Belajar
+                                        <span>
+                                            →
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MATERI 3
+                    ================================================== -->
+
+                    <article
+                        class="materi-card"
+                        data-title="Hand and Eye Coordination Test"
+                        data-category="Tes Kebugaran"
+                    >
+
+                        <div class="materi-image">
+
+                            <img
+                                src="assets/unnamed.png"
+                                alt="Hand and Eye Coordination Test"
+                            >
+
+                            <div class="image-overlay"></div>
+
+                            <span class="materi-category">
+                                Tes Kebugaran
+                            </span>
+
+                            <span class="materi-number">
+                                03
+                            </span>
+
+                        </div>
+
+
+                        <div class="materi-card-body">
+
+                            <div class="materi-card-top">
+
+                                <span class="materi-level blue">
+                                    🔵 TES
+                                </span>
+
+                                <span class="materi-duration">
+                                    ⏱ 10 Menit
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Hand and Eye Coordination Test
+                            </h3>
+
+
+                            <p class="materi-description">
+                                Pelajari tujuan dan pelaksanaan
+                                Hand and Eye Coordination Test
+                                sesuai materi dan instruksi yang
+                                diberikan oleh penguji.
+                            </p>
+
+
+                            <div class="materi-progress">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Materi 3 dari 7
+                                    </span>
+
+                                    <strong>
+                                        03
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-line">
+
+                                    <span
+                                        style="width: 42%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="materi-footer">
+
+                                <span class="materi-topic">
+                                    👋 Koordinasi tangan & mata
+                                </span>
+
+
+                                <div class="materi-buttons">
+
+                                    <button
+                                        type="button"
+                                        class="materi-button primary btn-baca"
+                                        data-target="materiDetail3"
+                                    >
+                                        Mulai Belajar
+                                        <span>
+                                            →
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MATERI 4
+                    ================================================== -->
+
+                    <article
+                        class="materi-card"
+                        data-title="Sit Up Test"
+                        data-category="Tes Kebugaran"
+                    >
+
+                        <div class="materi-image">
+
+                            <img
+                                src="assets/images (1).jpg"
+                                alt="Sit Up Test"
+                            >
+
+                            <div class="image-overlay"></div>
+
+                            <span class="materi-category">
+                                Tes Kebugaran
+                            </span>
+
+                            <span class="materi-number">
+                                04
+                            </span>
+
+                        </div>
+
+
+                        <div class="materi-card-body">
+
+                            <div class="materi-card-top">
+
+                                <span class="materi-level yellow">
+                                    🟡 TES
+                                </span>
+
+                                <span class="materi-duration">
+                                    ⏱ 10 Menit
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Sit Up Test
+                            </h3>
+
+
+                            <p class="materi-description">
+                                Tes baring duduk atau sit up
+                                yang dilakukan secara berulang
+                                selama 30 detik untuk mengukur
+                                kekuatan otot perut.
+                            </p>
+
+
+                            <div class="materi-progress">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Materi 4 dari 7
+                                    </span>
+
+                                    <strong>
+                                        04
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-line">
+
+                                    <span
+                                        style="width: 56%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="materi-footer">
+
+                                <span class="materi-topic">
+                                    💪 Kekuatan otot perut
+                                </span>
+
+
+                                <div class="materi-buttons">
+
+                                    <button
+                                        type="button"
+                                        class="materi-button primary btn-baca"
+                                        data-target="materiDetail4"
+                                    >
+                                        Mulai Belajar
+                                        <span>
+                                            →
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MATERI 5
+                    ================================================== -->
+
+                    <article
+                        class="materi-card"
+                        data-title="Standing Broad Jump Test"
+                        data-category="Tes Kebugaran"
+                    >
+
+                        <div class="materi-image">
+
+                            <img
+                                src="assets/EadaehuXQAA_q36.webp"
+                                alt="Standing Broad Jump Test"
+                            >
+
+                            <div class="image-overlay"></div>
+
+                            <span class="materi-category">
+                                Tes Kebugaran
+                            </span>
+
+                            <span class="materi-number">
+                                05
+                            </span>
+
+                        </div>
+
+
+                        <div class="materi-card-body">
+
+                            <div class="materi-card-top">
+
+                                <span class="materi-level blue">
+                                    🔵 TES
+                                </span>
+
+                                <span class="materi-duration">
+                                    ⏱ 15 Menit
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Standing Broad Jump Test
+                            </h3>
+
+
+                            <p class="materi-description">
+                                Tes meloncat ke depan tanpa awalan
+                                untuk mengukur daya ledak otot
+                                tungkai.
+                            </p>
+
+
+                            <div class="materi-progress">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Materi 5 dari 7
+                                    </span>
+
+                                    <strong>
+                                        05
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-line">
+
+                                    <span
+                                        style="width: 70%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="materi-footer">
+
+                                <span class="materi-topic">
+                                    🦵 Daya ledak otot tungkai
+                                </span>
+
+
+                                <div class="materi-buttons">
+
+                                    <button
+                                        type="button"
+                                        class="materi-button primary btn-baca"
+                                        data-target="materiDetail5"
+                                    >
+                                        Mulai Belajar
+                                        <span>
+                                            →
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MATERI 6
+                    ================================================== -->
+
+                    <article
+                        class="materi-card"
+                        data-title="T Test"
+                        data-category="Tes Kebugaran"
+                    >
+
+                        <div class="materi-image">
+
+                            <img
+                                src="assets/image_65303d55.jpg"
+                                alt="T Test"
+                            >
+
+                            <div class="image-overlay"></div>
+
+                            <span class="materi-category">
+                                Tes Kebugaran
+                            </span>
+
+                            <span class="materi-number">
+                                06
+                            </span>
+
+                        </div>
+
+
+                        <div class="materi-card-body">
+
+                            <div class="materi-card-top">
+
+                                <span class="materi-level yellow">
+                                    🟡 TES
+                                </span>
+
+                                <span class="materi-duration">
+                                    ⏱ 15 Menit
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                T Test
+                            </h3>
+
+
+                            <p class="materi-description">
+                                Tes lari cepat membentuk huruf T
+                                yang digunakan untuk mengukur
+                                kelincahan murid.
+                            </p>
+
+
+                            <div class="materi-progress">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Materi 6 dari 7
+                                    </span>
+
+                                    <strong>
+                                        06
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-line">
+
+                                    <span
+                                        style="width: 84%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="materi-footer">
+
+                                <span class="materi-topic">
+                                    ⚡ Kelincahan
+                                </span>
+
+
+                                <div class="materi-buttons">
+
+                                    <button
+                                        type="button"
+                                        class="materi-button primary btn-baca"
+                                        data-target="materiDetail6"
+                                    >
+                                        Mulai Belajar
+                                        <span>
+                                            →
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MATERI 7
+                    ================================================== -->
+
+                    <article
+                        class="materi-card"
+                        data-title="Beep Test"
+                        data-category="Tes Kebugaran"
+                    >
+
+                        <div class="materi-image">
+
+                            <img
+                                src="assets/images (2).jpg"
+                                alt="Beep Test"
+                            >
+
+                            <div class="image-overlay"></div>
+
+                            <span class="materi-category">
+                                Tes Kebugaran
+                            </span>
+
+                            <span class="materi-number">
+                                07
+                            </span>
+
+                        </div>
+
+
+                        <div class="materi-card-body">
+
+                            <div class="materi-card-top">
+
+                                <span class="materi-level blue">
+                                    🔵 TES
+                                </span>
+
+                                <span class="materi-duration">
+                                    ⏱ 15 Menit
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Beep Test
+                            </h3>
+
+
+                            <p class="materi-description">
+                                Tes lari bolak-balik sejauh 20 meter
+                                mengikuti irama suara beep untuk
+                                mengukur level daya tahan aerobik.
+                            </p>
+
+
+                            <div class="materi-progress">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Materi 7 dari 7
+                                    </span>
+
+                                    <strong>
+                                        07
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-line">
+
+                                    <span
+                                        style="width: 100%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="materi-footer">
+
+                                <span class="materi-topic">
+                                    🫁 Daya tahan aerobik
+                                </span>
+
+
+                                <div class="materi-buttons">
+
+                                    <button
+                                        type="button"
+                                        class="materi-button primary btn-baca"
+                                        data-target="materiDetail7"
+                                    >
+                                        Mulai Belajar
+                                        <span>
+                                            →
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 TIPS BELAJAR
+            ================================================== -->
+
+            <section class="learning-tip">
+
+                <div class="learning-tip-icon">
+                    💡
+                </div>
+
+
+                <div class="learning-tip-content">
+
+                    <span>
+                        TIPS BELAJAR
+                    </span>
+
+                    <h3>
+                        Pahami materi sebelum melakukan tes
+                    </h3>
+
+                    <p>
+                        Pelajari tujuan, peralatan, prosedur,
+                        dan cara penilaian setiap tes sebelum
+                        melakukan pengukuran kebugaran.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 DETAIL MATERI
+            ================================================== -->
+
+            <section class="materi-details">
+
+
+                <!-- =================================================
+                     DETAIL 1
+                ================================================== -->
+
+                <article
+                    id="materiDetail1"
+                    class="materi-detail"
+                >
+
+                    <div class="detail-header">
+
+                        <div class="detail-heading-left">
+
+                            <span class="content-label">
+                                MATERI 01 • DASAR KEBUGARAN
+                            </span>
+
+                            <h2>
+                                Pengertian Kebugaran Jasmani
+                            </h2>
+
+                        </div>
+
+
+                        <span class="detail-icon">
+                            ❤️
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <h3>
+                            📖 Pengertian
+                        </h3>
+
+                        <p>
+                            Kebugaran jasmani merupakan kemampuan
+                            tubuh untuk melakukan aktivitas sehari-hari
+                            dengan baik tanpa mengalami kelelahan
+                            yang berlebihan.
+                        </p>
+
+
+                        <h3>
+                            🎯 Tujuan Pembelajaran
+                        </h3>
+
+                        <p>
+                            Murid diharapkan memahami pengertian
+                            kebugaran jasmani serta pentingnya menjaga
+                            kondisi tubuh melalui aktivitas fisik
+                            yang teratur.
+                        </p>
+
+
+                        <h3>
+                            ❤️ Pentingnya Kebugaran Jasmani
+                        </h3>
+
+                        <p>
+                            Kondisi tubuh yang bugar membantu seseorang
+                            melakukan aktivitas dengan lebih baik serta
+                            mendukung kebiasaan hidup aktif dan sehat.
+                        </p>
+
+
+                        <h3>
+                            ✅ Kesimpulan
+                        </h3>
+
+                        <p>
+                            Kebugaran jasmani perlu dijaga melalui
+                            aktivitas fisik yang sesuai, pola hidup
+                            sehat, istirahat yang cukup, dan kebiasaan
+                            positif.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     DETAIL 2
+                ================================================== -->
+
+                <article
+                    id="materiDetail2"
+                    class="materi-detail"
+                >
+
+                    <div class="detail-header">
+
+                        <div class="detail-heading-left">
+
+                            <span class="content-label">
+                                MATERI 02 • DASAR KEBUGARAN
+                            </span>
+
+                            <h2>
+                                Pemanasan
+                            </h2>
+
+                        </div>
+
+
+                        <span class="detail-icon">
+                            🔥
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <h3>
+                            📖 Pengertian
+                        </h3>
+
+                        <p>
+                            Pemanasan merupakan kegiatan persiapan
+                            tubuh sebelum melakukan aktivitas fisik
+                            atau latihan.
+                        </p>
+
+
+                        <h3>
+                            🎯 Tujuan
+                        </h3>
+
+                        <p>
+                            Pemanasan dilakukan sebagai persiapan
+                            sebelum melakukan kegiatan atau latihan
+                            fisik.
+                        </p>
+
+
+                        <h3>
+                            🏃 Contoh Aktivitas Pemanasan
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Jalan atau jogging ringan.
+                            </li>
+
+                            <li>
+                                Gerakan peregangan dinamis.
+                            </li>
+
+                            <li>
+                                Gerakan pada persendian.
+                            </li>
+
+                            <li>
+                                Aktivitas ringan secara bertahap.
+                            </li>
+
+                        </ul>
+
+
+                        <h3>
+                            ✅ Hal yang Perlu Diperhatikan
+                        </h3>
+
+                        <p>
+                            Pemanasan dilakukan secara bertahap
+                            dan disesuaikan dengan kondisi tubuh
+                            sebelum masuk ke kegiatan utama.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     DETAIL 3
+                ================================================== -->
+
+                <article
+                    id="materiDetail3"
+                    class="materi-detail"
+                >
+
+                    <div class="detail-header">
+
+                        <div class="detail-heading-left">
+
+                            <span class="content-label">
+                                MATERI 03 • TES KEBUGARAN
+                            </span>
+
+                            <h2>
+                                Hand and Eye Coordination Test
+                            </h2>
+
+                        </div>
+
+
+                        <span class="detail-icon">
+                            👋
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <h3>
+                            📖 Deskripsi
+                        </h3>
+
+                        <p>
+                            Hand and Eye Coordination Test merupakan tes
+                            untuk mengukur koordinasi antara mata dan tangan
+                            melalui gerakan yang dilakukan sesuai prosedur tes.
+                        </p>
+
+
+                        <h3>
+                            🎯 Tujuan
+                        </h3>
+
+                        <p>
+                            Mengukur kemampuan koordinasi mata dan tangan
+                            berdasarkan jumlah hasil gerakan yang berhasil
+                            dilakukan sesuai ketentuan tes.
+                        </p>
+
+
+                        <h3>
+                            📝 Persiapan dan Pelaksanaan
+                        </h3>
+
+                        <p>
+                            Siapkan alat dan area tes sesuai prosedur yang
+                            digunakan. Murid mengikuti instruksi penguji dan
+                            melakukan tes dengan memperhatikan ketepatan
+                            koordinasi mata dan tangan.
+                        </p>
+
+
+                        <h3>
+                            📊 Penilaian
+                        </h3>
+
+                        <p>
+                            Hasil tes dicatat berdasarkan jumlah keberhasilan
+                            gerakan, kemudian dicocokkan dengan norma penilaian
+                            Hand and Eye Coordination Test berikut.
+                        </p>
+
+
+                        <h3>
+                            📋 Norma Tes Hand and Eye Coordination
+                        </h3>
+
+                        <div class="detail-table-wrapper">
+
+                            <table class="detail-table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Putra</th>
+                                        <th>Putri</th>
+                                        <th>Skor</th>
+                                        <th>Kategori</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>≥ 21</td>
+                                        <td>≥ 14</td>
+                                        <td>5</td>
+                                        <td>Baik Sekali</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15 - 20</td>
+                                        <td>8 - 13</td>
+                                        <td>4</td>
+                                        <td>Baik</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9 - 14</td>
+                                        <td>4 - 7</td>
+                                        <td>3</td>
+                                        <td>Sedang</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 - 8</td>
+                                        <td>1 - 3</td>
+                                        <td>2</td>
+                                        <td>Kurang</td>
+                                    </tr>
+                                    <tr>
+                                        <td>≤ 3</td>
+                                        <td>≤ 0</td>
+                                        <td>1</td>
+                                        <td>Kurang Sekali</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     DETAIL 4
+                ================================================== -->
+
+                <article
+                    id="materiDetail4"
+                    class="materi-detail"
+                >
+
+                    <div class="detail-header">
+
+                        <div class="detail-heading-left">
+
+                            <span class="content-label">
+                                MATERI 04 • TES KEBUGARAN
+                            </span>
+
+                            <h2>
+                                Sit Up Test
+                            </h2>
+
+                        </div>
+
+
+                        <span class="detail-icon">
+                            💪
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <h3>
+                            📖 Deskripsi
+                        </h3>
+
+                        <p>
+                            Merupakan tes yang dilakukan dengan cara
+                            baring duduk atau <em>sit up</em> secara
+                            berulang-ulang dalam waktu 30 detik.
+                            Tes ini merupakan adopsi dari Mackenzie, 2015.
+                        </p>
+
+
+                        <h3>
+                            🎯 Tujuan
+                        </h3>
+
+                        <p>
+                            Mengukur kekuatan otot perut.
+                        </p>
+
+
+                        <h3>
+                            🧰 Peralatan
+                        </h3>
+
+                        <ol>
+
+                            <li>
+                                Matras/Lantai/lapangan rumput yang
+                                datar dan bersih.
+                            </li>
+
+                            <li>
+                                Stopwatch.
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://tksi.kemendikdasmen.go.id/download/Form-Tes-Sit-Up.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Formulir tes
+                                </a>.
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            📝 Prosedur Pelaksanaan Tes
+                        </h3>
+
+
+                        <p>
+                            <strong>Persiapan tes:</strong>
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Menyiapkan dan memastikan
+                                Matras/Lantai yang datar dan bersih.
+                            </li>
+
+                            <li>
+                                Menyiapkan semua peralatan
+                                yang dibutuhkan.
+                            </li>
+
+                        </ol>
+
+
+                        <p>
+                            <strong>Pelaksanaan:</strong>
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Murid berbaring telentang di matras
+                                dengan posisi punggung menyentuh lantai,
+                                lutut ditekuk, telapak kaki rata di lantai
+                                dan posisi tangan diletakkan menyilang
+                                di dada. Partner membantu memegang dan
+                                menahan kedua pergelangan kaki agar kaki
+                                subjek tidak terangkat.
+                            </li>
+
+                            <li>
+                                Murid mengangkat tubuh dengan posisi
+                                90 derajat atau sampai posisi tangan
+                                menyentuh paha dan kemudian kembali
+                                ke posisi awal.
+                            </li>
+
+                            <li>
+                                Murid melakukan tes selama 30 detik.
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            📊 Cara Memberikan Skor
+                        </h3>
+
+                        <ol>
+
+                            <li>
+                                Penguji menghitung banyaknya
+                                <em>sit ups</em> yang dilakukan murid
+                                selama 30 detik.
+                            </li>
+
+                            <li>
+                                Penguji mengkonversi banyaknya
+                                <em>sit ups</em> terhadap norma tes.
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            🧪 Validitas dan Reliabilitas Tes
+                        </h3>
+
+                        <p>
+                            Nilai validitas instrumen Sit-up test
+                            0.740 (valid), pengambilan keputusan validitas
+                            berdasarkan pada nilai rhitung &gt; rtabel
+                            dengan α = 0.05. Nilai reliabilitas sebesar
+                            0.698 (reliabilitas tinggi).
+                        </p>
+
+
+                        <h3>
+                            📋 Norma Tes Sit Up
+                        </h3>
+
+                        <div class="detail-table-wrapper">
+
+                            <table class="detail-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>
+                                            Putra
+                                        </th>
+
+                                        <th>
+                                            Putri
+                                        </th>
+
+                                        <th>
+                                            Skor
+                                        </th>
+
+                                        <th>
+                                            Kategori
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            ≥ 30
+                                        </td>
+
+                                        <td>
+                                            ≥ 24
+                                        </td>
+
+                                        <td>
+                                            5
+                                        </td>
+
+                                        <td>
+                                            Baik Sekali
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            21 - 29
+                                        </td>
+
+                                        <td>
+                                            18 - 23
+                                        </td>
+
+                                        <td>
+                                            4
+                                        </td>
+
+                                        <td>
+                                            Baik
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            18 - 20
+                                        </td>
+
+                                        <td>
+                                            12 - 17
+                                        </td>
+
+                                        <td>
+                                            3
+                                        </td>
+
+                                        <td>
+                                            Sedang
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            9 - 17
+                                        </td>
+
+                                        <td>
+                                            6 - 11
+                                        </td>
+
+                                        <td>
+                                            2
+                                        </td>
+
+                                        <td>
+                                            Kurang
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            ≤ 8
+                                        </td>
+
+                                        <td>
+                                            ≤ 5
+                                        </td>
+
+                                        <td>
+                                            1
+                                        </td>
+
+                                        <td>
+                                            Kurang Sekali
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     DETAIL 5
+                ================================================== -->
+
+                <article
+                    id="materiDetail5"
+                    class="materi-detail"
+                >
+
+                    <div class="detail-header">
+
+                        <div class="detail-heading-left">
+
+                            <span class="content-label">
+                                MATERI 05 • TES KEBUGARAN
+                            </span>
+
+                            <h2>
+                                Standing Broad Jump Test
+                            </h2>
+
+                        </div>
+
+
+                        <span class="detail-icon">
+                            🦵
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <h3>
+                            📖 Deskripsi
+                        </h3>
+
+                        <p>
+                            Merupakan tes yang dilakukan dengan cara
+                            meloncat ke depan tanpa awalan. Tes ini
+                            merupakan adopsi dari AAHPERD 1976 dalam
+                            David Miller 2010.
+                        </p>
+
+
+                        <h3>
+                            🎯 Tujuan
+                        </h3>
+
+                        <p>
+                            Mengukur daya ledak otot tungkai.
+                        </p>
+
+
+                        <h3>
+                            🧰 Peralatan
+                        </h3>
+
+                        <ol>
+
+                            <li>
+                                Lantai yang datar dan rata.
+                            </li>
+
+                            <li>
+                                Meteran plastik dan besi.
+                            </li>
+
+                            <li>
+                                Lakban atau sesuatu yang dapat
+                                digunakan sebagai pembatas.
+                            </li>
+
+                            <li>
+
+                                <a
+                                    href="https://tksi.kemendikdasmen.go.id/download/Form-Standing-Broad-Jump-Test.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Formulir tes
+                                </a>.
+
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            📝 Prosedur Pelaksanaan Tes
+                        </h3>
+
+
+                        <p>
+                            <strong>Persiapan tes:</strong>
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Penguji menyiapkan lantai yang datar
+                                dan rata, meteran, masking tape atau marker.
+                            </li>
+
+                            <li>
+                                Penguji menyiapkan formulir tes
+                                dan alat tulis.
+                            </li>
+
+                            <li>
+                                Penguji menjelaskan dengan detail
+                                prosedur pelaksanaan tes kepada murid.
+                            </li>
+
+                        </ol>
+
+
+                        <p>
+                            <strong>Pelaksanaan tes:</strong>
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Murid berdiri ke belakang garis batas,
+                                kaki sejajar, lutut ditekuk, posisi tangan
+                                di samping kaki.
+                            </li>
+
+                            <li>
+                                Murid mengayunkan tangan ke depan dan
+                                ke belakang badan dan melompat sejauh
+                                mungkin ke depan kemudian mendarat
+                                menggunakan kedua kaki bersama-sama.
+                            </li>
+
+                            <li>
+                                Penguji memberi tanda bekas pendaratan
+                                bagian tubuh yang terdekat dengan garis start.
+                            </li>
+
+                            <li>
+                                Murid melakukan 2 kali kesempatan.
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            📊 Cara Memberikan Skor
+                        </h3>
+
+                        <ol>
+
+                            <li>
+                                Penguji mengukur hasil tes dari bekas
+                                pendaratan kaki, badan atau anggota
+                                badan yang terdekat dari garis start.
+                            </li>
+
+                            <li>
+                                Penguji menilai jarak loncatan terjauh
+                                yang diperoleh murid dari ketiga loncatan
+                                dalam satuan <strong>centimeter</strong>.
+                            </li>
+
+                            <li>
+                                Penguji mengkonversi hasil tes
+                                terhadap norma tes.
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            🧪 Validitas dan Reliabilitas
+                        </h3>
+
+                        <p>
+                            Nilai validitas instrumen Standing Broad Jump
+                            test 0.766 (valid), pengambilan keputusan
+                            validitas berdasarkan pada nilai rhitung &gt;
+                            rtabel dengan α = 0.05. Nilai reliabilitas
+                            sebesar 0.695 (reliabilitas tinggi).
+                        </p>
+
+
+                        <h3>
+                            📋 Norma Standing Broad Jump
+                        </h3>
+
+                        <div class="detail-table-wrapper">
+
+                            <table class="detail-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>
+                                            Putra
+                                        </th>
+
+                                        <th>
+                                            Putri
+                                        </th>
+
+                                        <th>
+                                            Skor
+                                        </th>
+
+                                        <th>
+                                            Kategori
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            ≥ 224
+                                        </td>
+
+                                        <td>
+                                            ≥ 178
+                                        </td>
+
+                                        <td>
+                                            5
+                                        </td>
+
+                                        <td>
+                                            Baik Sekali
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            195 - 223
+                                        </td>
+
+                                        <td>
+                                            153 - 177
+                                        </td>
+
+                                        <td>
+                                            4
+                                        </td>
+
+                                        <td>
+                                            Baik
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            165 - 194
+                                        </td>
+
+                                        <td>
+                                            129 - 152
+                                        </td>
+
+                                        <td>
+                                            3
+                                        </td>
+
+                                        <td>
+                                            Sedang
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            136 - 164
+                                        </td>
+
+                                        <td>
+                                            104 - 128
+                                        </td>
+
+                                        <td>
+                                            2
+                                        </td>
+
+                                        <td>
+                                            Kurang
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            ≤ 135
+                                        </td>
+
+                                        <td>
+                                            ≤ 103
+                                        </td>
+
+                                        <td>
+                                            1
+                                        </td>
+
+                                        <td>
+                                            Kurang Sekali
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     DETAIL 6
+                ================================================== -->
+
+                <article
+                    id="materiDetail6"
+                    class="materi-detail"
+                >
+
+                    <div class="detail-header">
+
+                        <div class="detail-heading-left">
+
+                            <span class="content-label">
+                                MATERI 06 • TES KEBUGARAN
+                            </span>
+
+                            <h2>
+                                T Test
+                            </h2>
+
+                        </div>
+
+
+                        <span class="detail-icon">
+                            ⚡
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <h3>
+                            📖 Deskripsi
+                        </h3>
+
+                        <p>
+                            Merupakan tes yang dilakukan dengan cara
+                            lari cepat membentuk huruf T dengan jarak
+                            lari lurus ke depan sepanjang 9,14 m, dan
+                            <em>galloping</em> dengan jarak 4,57 m.
+                        </p>
+
+
+                        <h3>
+                            🎯 Tujuan
+                        </h3>
+
+                        <p>
+                            Mengukur kelincahan murid.
+                        </p>
+
+
+                        <h3>
+                            🧰 Peralatan
+                        </h3>
+
+                        <ol>
+
+                            <li>
+                                Cone.
+                            </li>
+
+                            <li>
+                                Meteran.
+                            </li>
+
+                            <li>
+                                Peluit.
+                            </li>
+
+                            <li>
+                                Stopwatch.
+                            </li>
+
+                            <li>
+
+                                <a
+                                    href="https://tksi.kemendikdasmen.go.id/download/Form-T-Test.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Formulir tes
+                                </a>.
+
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            📝 Prosedur Pelaksanaan Tes
+                        </h3>
+
+
+                        <p>
+                            <strong>Persiapan tes:</strong>
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Mengukur dan membuat lintasan lari
+                                berbentuk huruf T sesuai dengan ukuran.
+                            </li>
+
+                            <li>
+                                Menempatkan cone yang telah ditentukan
+                                titik dan jaraknya, yaitu di kiri kanan
+                                dan tengah.
+                            </li>
+
+                            <li>
+                                Menjelaskan dengan detail prosedur
+                                pelaksanaan tes kepada murid.
+                            </li>
+
+                        </ol>
+
+
+                        <p>
+                            <strong>Pelaksanaan tes:</strong>
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Murid berdiri siap di belakang garis
+                                start (cone A).
+                            </li>
+
+                            <li>
+                                Murid berlari ke depan saat peluit
+                                ditiup dan stopwatch ON, lurus ke
+                                cone B dan harus menyentuh cone B
+                                dengan tangan kanan, kemudian
+                                <em>galloping</em> ke samping kiri
+                                menyentuh cone C menggunakan tangan
+                                kiri, dilanjutkan <em>galloping</em>
+                                ke kanan menyentuh cone D menggunakan
+                                tangan kanan.
+                            </li>
+
+                            <li>
+                                Murid kembali ke arah cone B dan
+                                menyentuh menggunakan tangan kiri,
+                                selanjutnya murid berlari mundur
+                                menuju garis finish (cone A) untuk
+                                menyelesaikan tes.
+                            </li>
+
+                            <li>
+                                Murid 2 kali melakukan tes dan diberikan
+                                istirahat di setiap jeda pelaksanaan
+                                dengan waktu istirahat kurang lebih
+                                3-5 menit.
+                            </li>
+
+                            <li>
+                                Bila murid yang tidak dapat menyentuh
+                                cone, <em>galloping</em> ke samping,
+                                atau tidak dapat mempertahankan posisi
+                                tubuh menghadap ke depan, penguji
+                                menghentikan waktu dan pelaksanaan
+                                tes diulangi dari titik awal.
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            📊 Cara Memberikan Skor
+                        </h3>
+
+                        <ol>
+
+                            <li>
+                                Penguji mencatat waktu tes pada 2 kali
+                                kesempatan dan memilih hasil tes terbaik
+                                dalam <strong>detik:milidetik</strong>.
+                            </li>
+
+                            <li>
+                                Penguji mengkonversi hasil tes terhadap
+                                norma tes.
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            🧪 Validitas dan Reliabilitas Tes
+                        </h3>
+
+                        <p>
+                            Nilai validitas instrumen T Test 0.795 (valid),
+                            pengambilan keputusan validitas berdasarkan
+                            pada nilai rhitung &gt; rtabel dengan Alpha
+                            = 0.05. Nilai reliabilitas sebesar 0.692
+                            (reliabilitas tinggi).
+                        </p>
+
+
+                        <h3>
+                            📋 Norma T Test
+                        </h3>
+
+                        <div class="detail-table-wrapper">
+
+                            <table class="detail-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>
+                                            Putra
+                                        </th>
+
+                                        <th>
+                                            Putri
+                                        </th>
+
+                                        <th>
+                                            Skor
+                                        </th>
+
+                                        <th>
+                                            Kategori
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            ≤ 10.00
+                                        </td>
+
+                                        <td>
+                                            ≤ 11.83
+                                        </td>
+
+                                        <td>
+                                            5
+                                        </td>
+
+                                        <td>
+                                            Baik Sekali
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            10.01 - 12.37
+                                        </td>
+
+                                        <td>
+                                            11.84 - 13.64
+                                        </td>
+
+                                        <td>
+                                            4
+                                        </td>
+
+                                        <td>
+                                            Baik
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            12.38 - 13.17
+                                        </td>
+
+                                        <td>
+                                            13.65 - 15.46
+                                        </td>
+
+                                        <td>
+                                            3
+                                        </td>
+
+                                        <td>
+                                            Sedang
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            13.18 - 14.75
+                                        </td>
+
+                                        <td>
+                                            15.47 - 17.29
+                                        </td>
+
+                                        <td>
+                                            2
+                                        </td>
+
+                                        <td>
+                                            Kurang
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            ≥ 14.76
+                                        </td>
+
+                                        <td>
+                                            ≥ 17.30
+                                        </td>
+
+                                        <td>
+                                            1
+                                        </td>
+
+                                        <td>
+                                            Kurang Sekali
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     DETAIL 7
+                ================================================== -->
+
+                <article
+                    id="materiDetail7"
+                    class="materi-detail"
+                >
+
+                    <div class="detail-header">
+
+                        <div class="detail-heading-left">
+
+                            <span class="content-label">
+                                MATERI 07 • TES KEBUGARAN
+                            </span>
+
+                            <h2>
+                                Beep Test
+                            </h2>
+
+                        </div>
+
+
+                        <span class="detail-icon">
+                            🫁
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <h3>
+                            📖 Deskripsi
+                        </h3>
+
+                        <p>
+                            Merupakan tes yang dilakukan dengan cara
+                            berlari secara terus menerus dari satu
+                            titik/garis ke titik/garis lainnya dengan
+                            jarak 20 m mengikuti irama suara beep/
+                            ketukan sebagai isyarat. Tes ini merupakan
+                            adopsi dari FitnessGram.
+                        </p>
+
+
+                        <h3>
+                            🎯 Tujuan
+                        </h3>
+
+                        <p>
+                            Mengukur level daya tahan aerobik (VO2 Max).
+                        </p>
+
+
+                        <h3>
+                            🧰 Peralatan
+                        </h3>
+
+                        <ol>
+
+                            <li>
+                                Lapangan datar dan tidak licin,
+                                panjang minimal 20 meter.
+                            </li>
+
+                            <li>
+                                Kerucut penanda.
+                            </li>
+
+                            <li>
+
+                                <a
+                                    href="https://tksi.kemendikdasmen.go.id/download/The-Beep-Test-audio.mp3"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Pemutar audio
+                                </a>
+                                atau CD rekaman.
+                            </li>
+
+                            <li>
+
+                                <a
+                                    href="https://tksi.kemendikdasmen.go.id/download.php/Form-Multiple-Fitness-Test-Bleep-Test.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Formulir tes
+                                </a>.
+
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            📝 Prosedur Pelaksanaan Tes
+                        </h3>
+
+
+                        <p>
+                            <strong>Persiapan tes:</strong>
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Menyiapkan jalur sejauh 20 meter.
+                            </li>
+
+                            <li>
+                                Menyiapkan kerucut penanda.
+                            </li>
+
+                            <li>
+                                Menyiapkan pemutar audio atau
+                                CD rekaman.
+                            </li>
+
+                            <li>
+                                Menyiapkan format tes dan menjelaskan
+                                dengan detail prosedur pelaksanaan
+                                tes kepada murid.
+                            </li>
+
+                        </ol>
+
+
+                        <p>
+                            <strong>Pelaksanaan:</strong>
+                        </p>
+
+                        <ol>
+
+                            <li>
+                                Murid berdiri di belakang garis pertama
+                                menghadap garis kedua dan memulai lari
+                                ketika mendengarkan instruksi dari
+                                pemutar audio.
+                            </li>
+
+                            <li>
+                                Murid berlari dari satu titik/garis
+                                menuju titik/garis berikutnya mengikuti
+                                penanda irama.
+                            </li>
+
+                            <li>
+                                Murid harus sampai di salah satu titik/
+                                garis yang ditempuhnya dengan posisi
+                                salah satu kaki harus tepat menginjak
+                                atau melewati garis batas sebelum atau
+                                bersamaan dengan suara beep berbunyi.
+                            </li>
+
+                            <li>
+                                Murid berusaha berlari selama mungkin
+                                sesuai dengan kemampuan menyesuaikan
+                                irama beep test.
+                            </li>
+
+                            <li>
+                                Murid berhenti atau dihentikan jika:
+
+                                <ul>
+
+                                    <li>
+                                        Gagal mencapai garis batas
+                                        20 meter setelah suara ketukan
+                                        beep berbunyi. Asisten memberi
+                                        toleransi 1 x 20 meter dengan
+                                        memberi kesempatan murid
+                                        menyesuaikan kecepatannya.
+                                    </li>
+
+                                    <li>
+                                        Pada masa toleransi itu murid
+                                        gagal menyesuaikan kecepatannya,
+                                        maka dia dihentikan dari
+                                        kegiatan tes.
+                                    </li>
+
+                                    <li>
+                                        Tidak mampu berlari mengikuti
+                                        kecepatan tersebut.
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            📊 Cara Memberikan Skor
+                        </h3>
+
+                        <ol>
+
+                            <li>
+                                Penguji mencatat <strong>level dan
+                                balikan</strong> saat murid berhenti
+                                atau dihentikan melakukan tes.
+                            </li>
+
+                            <li>
+                                Penguji mengkonversi hasil tes murid
+                                terhadap norma tes.
+                            </li>
+
+                        </ol>
+
+
+                        <h3>
+                            🧪 Validitas dan Reliabilitas Tes
+                        </h3>
+
+                        <p>
+                            Nilai validitas instrumen tes Multi stage
+                            fitness/Bleep/Beep test 0.744 (valid),
+                            pengambilan keputusan validitas berdasarkan
+                            pada nilai rhitung &gt; rtabel dengan
+                            α = 0.05. Nilai reliabilitas sebesar
+                            0.697 (reliabilitas tinggi).
+                        </p>
+
+
+                        <h3>
+                            📋 Norma MFT/Bleep Test/Beep Test
+                        </h3>
+
+                        <div class="detail-table-wrapper">
+
+                            <table class="detail-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>
+                                            Putra
+                                        </th>
+
+                                        <th>
+                                            Putri
+                                        </th>
+
+                                        <th>
+                                            Skor
+                                        </th>
+
+                                        <th>
+                                            Kategori
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            &gt; L7 B7
+                                        </td>
+
+                                        <td>
+                                            &gt; L4 B5
+                                        </td>
+
+                                        <td>
+                                            5
+                                        </td>
+
+                                        <td>
+                                            Baik Sekali
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            L4 B4 - L7 B7
+                                        </td>
+
+                                        <td>
+                                            L3 B3 - L4 B5
+                                        </td>
+
+                                        <td>
+                                            4
+                                        </td>
+
+                                        <td>
+                                            Baik
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            L2 B2 - L4 B3
+                                        </td>
+
+                                        <td>
+                                            L2 B1 - L3 B2
+                                        </td>
+
+                                        <td>
+                                            3
+                                        </td>
+
+                                        <td>
+                                            Sedang
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            L1 B2 - L2 B1
+                                        </td>
+
+                                        <td>
+                                            L1 B2 - L1 B7
+                                        </td>
+
+                                        <td>
+                                            2
+                                        </td>
+
+                                        <td>
+                                            Kurang
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            &lt; L1 B2
+                                        </td>
+
+                                        <td>
+                                            &lt; L1 B2
+                                        </td>
+
+                                        <td>
+                                            1
+                                        </td>
+
+                                        <td>
+                                            Kurang Sekali
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+            <!-- =================================================
+                 EMPTY STATE
+            ================================================== -->
+
+            <div
+                id="emptyState"
+                class="empty-state"
+                style="display: none;"
+            >
+
+                <div class="empty-icon">
+                    🔍
+                </div>
+
+
+                <h3>
+                    Materi tidak ditemukan
+                </h3>
+
+
+                <p>
+                    Coba gunakan kata kunci lain atau pilih
+                    kategori pembelajaran yang berbeda.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="materi.js"
+    ></script>
+
+</body>
+
+</html>

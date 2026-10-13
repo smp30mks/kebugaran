@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard Murid | Website Kebugaran</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <div class="logo-wrapper">
+
+                <img
+                    src="assets/logo.jpeg"
+                    alt="Logo Sekolah"
+                >
+
+            </div>
+
+            <div class="brand">
+
+                <h2>
+                    Kebugaran
+                </h2>
+
+                <span>
+                    Portal Murid
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENU -->
+
+        <nav class="sidebar-menu">
+
+            <a
+                href="dashboard.html"
+                class="menu-item active"
+            >
+
+                <span class="menu-icon">
+                    🏠
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="materi.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📚
+                </span>
+
+                <span>
+                    Materi
+                </span>
+
+            </a>
+
+
+            <a
+                href="video.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🎥
+                </span>
+
+                <span>
+                    Video
+                </span>
+
+            </a>
+
+
+            <a
+                href="tes.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    🏃
+                </span>
+
+                <span>
+                    Tes Kebugaran
+                </span>
+
+            </a>
+
+
+            <a
+                href="hasil.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    📊
+                </span>
+
+                <span>
+                    Hasil/Nilai
+                </span>
+
+            </a>
+
+                        <a
+                href="profil.html"
+                class="menu-item"
+            >
+
+                <span class="menu-icon">
+                    👤
+                </span>
+
+                <span>
+                    Profil
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- LOGOUT -->
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                id="logoutButton"
+            >
+
+                <span>
+                    🚪
+                </span>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         OVERLAY MOBILE
+    ====================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button
+                type="button"
+                class="menu-button"
+                id="menuButton"
+                aria-label="Buka menu"
+            >
+                ☰
+            </button>
+
+
+            <div class="page-title">
+
+                <h1>
+                    Dashboard
+                </h1>
+
+                <p>
+                    Selamat datang di Aplikasi Kebugaran
+                </p>
+
+            </div>
+
+
+            <div class="profile-mini">
+
+                <div class="profile-avatar">
+                    👤
+                </div>
+
+                <div class="profile-info">
+
+                    <strong id="topUserName">
+                        Memuat...
+                    </strong>
+
+                    <span id="topUserClass">
+                        -
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="dashboard-content">
+
+
+            <!-- =================================================
+                 WELCOME
+            ================================================== -->
+
+            <section class="welcome-card">
+
+                <div class="welcome-text">
+
+                    <span class="welcome-label">
+                        Selamat datang 👋
+                    </span>
+
+                    <h2 id="welcomeName">
+                        Memuat...
+                    </h2>
+
+                    <p>
+                        Pantau materi pembelajaran,
+                        tes kebugaran, dan hasil nilai Anda
+                        melalui aplikasi ini.
+                    </p>
+
+                </div>
+
+
+                <div class="welcome-icon">
+                    🏃‍♂️
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 PROFIL SINGKAT
+            ================================================== -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Profil Saya
+                        </h2>
+
+                        <p>
+                            Informasi akun Anda
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="profil.html"
+                        class="view-link"
+                    >
+                        Lihat Profil
+                    </a>
+
+                </div>
+
+
+                <div class="profile-grid">
+
+
+                    <div class="profile-card">
+
+                        <span>
+                            Nama Lengkap
+                        </span>
+
+                        <strong id="profileName">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-card">
+
+                        <span>
+                            NISN
+                        </span>
+
+                        <strong id="profileNisn">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-card">
+
+                        <span>
+                            Kelas
+                        </span>
+
+                        <strong id="profileClass">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-card">
+
+                        <span>
+                            Tahun Ajaran
+                        </span>
+
+                        <strong id="profileYear">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 MENU CEPAT
+            ================================================== -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Menu Pembelajaran
+                        </h2>
+
+                        <p>
+                            Akses fitur aplikasi dengan cepat
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <!-- MATERI -->
+
+                    <a
+                        href="materi.html"
+                        class="feature-card"
+                    >
+
+                        <div class="feature-icon">
+                            📚
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Materi
+                            </h3>
+
+                            <p>
+                                Pelajari materi PJOK
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- VIDEO -->
+
+                    <a
+                        href="video.html"
+                        class="feature-card"
+                    >
+
+                        <div class="feature-icon">
+                            🎥
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Video
+                            </h3>
+
+                            <p>
+                                Tonton video pembelajaran
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- TES -->
+
+                    <a
+                        href="tes.html"
+                        class="feature-card"
+                    >
+
+                        <div class="feature-icon">
+                            🏃
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Tes Kebugaran
+                            </h3>
+
+                            <p>
+                                Lihat informasi tes kebugaran
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- HASIL -->
+
+                    <a
+                        href="hasil.html"
+                        class="feature-card"
+                    >
+
+                        <div class="feature-icon">
+                            📊
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Hasil/Nilai
+                            </h3>
+
+                            <p>
+                                Lihat hasil dan nilai tes
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- PROFIL -->
+
+                    <a
+                        href="profil.html"
+                        class="feature-card"
+                    >
+
+                        <div class="feature-icon">
+                            👤
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Profil
+                            </h3>
+
+                            <p>
+                                Lihat informasi akun Anda
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="dashboard.js"
+    ></script>
+
+</body>
+
+</html>

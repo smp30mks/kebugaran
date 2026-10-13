@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Daftar | Website Kebugaran</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         MAIN REGISTER CONTAINER
+    ====================================================== -->
+
+    <main class="login-container">
+
+
+        <!-- =================================================
+             INFORMASI SEKOLAH / PANEL KIRI
+        ================================================== -->
+
+        <section class="login-info">
+
+
+            <!-- =================================================
+                 5 LOGO KECIL
+            ================================================== -->
+
+            <div class="corner-logos">
+
+
+                <!-- =================================================
+                     LOGO PPG
+                ================================================== -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/UNM.png"
+                        alt="Logo PPG"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     TUT WURI HANDAYANI
+                ================================================== -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/TUTWURI.png"
+                        alt="Tut Wuri Handayani"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     DIKTI SAINTEK BERDAMPAK
+                ================================================== -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/DITSAINTEK.jpg"
+                        alt="Dikti Saintek Berdampak"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     LOGO SEKOLAH
+                ================================================== -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/PPG.jpg"
+                        alt="Logo Sekolah"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     LOGO KELIMA
+                ================================================== -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/logo 1.jpg"
+                        alt="Logo Kelima"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 LOGO UTAMA
+            ================================================== -->
+
+            <div class="main-logo">
+
+                <img
+                    src="assets/logo.jpeg"
+                    alt="Logo UPT SPF SMP Negeri 30 Makassar"
+                >
+
+            </div>
+
+
+            <!-- =================================================
+                 JUDUL
+            ================================================== -->
+
+            <h1>
+
+                Website<br>
+
+                <span>
+                    Kebugaran
+                </span>
+
+            </h1>
+
+
+            <!-- =================================================
+                 NAMA SEKOLAH
+            ================================================== -->
+
+            <p class="school-name">
+
+                UPT SPF SMP Negeri 30 Makassar
+
+            </p>
+
+
+            <!-- =================================================
+                 DESKRIPSI
+            ================================================== -->
+
+            <p class="description">
+
+                Mari Bergerak, Mari Belajar, Mari Menjaga Kesehatan, 
+                Karena Tubuh Yang Aktif Adalah Bagian Dari Kehidupan yang Berkualitas.
+
+            </p>
+
+
+        </section>
+
+
+        <!-- =================================================
+             FORM DAFTAR
+        ================================================== -->
+
+        <section class="login-box">
+
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+
+            <div class="login-header">
+
+
+                <h2>
+
+                    Daftar
+
+                </h2>
+
+
+                <p>
+
+                    Silakan isi data Anda dengan benar
+
+                </p>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 PESAN
+            ================================================== -->
+
+            <div
+                id="registerMessage"
+                class="login-message"
+                style="display: none;"
+            ></div>
+
+
+            <!-- =================================================
+                 FORM
+            ================================================== -->
+
+            <form id="registerForm">
+
+
+                <!-- =================================================
+                     NAMA LENGKAP
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="nama">
+
+                        Nama Lengkap
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama lengkap"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     NISN
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="nisn">
+
+                        NISN
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="nisn"
+                        name="nisn"
+                        placeholder="Masukkan NISN"
+                        inputmode="numeric"
+                        maxlength="20"
+                        autocomplete="off"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     KELAS
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="kelas">
+
+                        Kelas
+
+                    </label>
+
+
+                    <select
+                        id="kelas"
+                        name="kelas"
+                        required
+                    >
+
+
+                        <option value="">
+
+                            Pilih kelas
+
+                        </option>
+
+
+                        <!-- =========================================
+                             KELAS 7
+                        ========================================== -->
+
+                        <optgroup label="Kelas 7">
+
+                            <option value="7.1">
+                                7.1
+                            </option>
+
+                            <option value="7.2">
+                                7.2
+                            </option>
+
+                            <option value="7.3">
+                                7.3
+                            </option>
+
+                            <option value="7.4">
+                                7.4
+                            </option>
+
+                            <option value="7.5">
+                                7.5
+                            </option>
+
+                            <option value="7.6">
+                                7.6
+                            </option>
+
+                            <option value="7.7">
+                                7.7
+                            </option>
+
+                            <option value="7.8">
+                                7.8
+                            </option>
+
+                            <option value="7.9">
+                                7.9
+                            </option>
+
+                            <option value="7.10">
+                                7.10
+                            </option>
+
+                        </optgroup>
+
+
+                        <!-- =========================================
+                             KELAS 8
+                        ========================================== -->
+
+                        <optgroup label="Kelas 8">
+
+                            <option value="8.1">
+                                8.1
+                            </option>
+
+                            <option value="8.2">
+                                8.2
+                            </option>
+
+                            <option value="8.3">
+                                8.3
+                            </option>
+
+                            <option value="8.4">
+                                8.4
+                            </option>
+
+                            <option value="8.5">
+                                8.5
+                            </option>
+
+                            <option value="8.6">
+                                8.6
+                            </option>
+
+                            <option value="8.7">
+                                8.7
+                            </option>
+
+                            <option value="8.8">
+                                8.8
+                            </option>
+
+                            <option value="8.9">
+                                8.9
+                            </option>
+
+                            <option value="8.10">
+                                8.10
+                            </option>
+
+                        </optgroup>
+
+
+                        <!-- =========================================
+                             KELAS 9
+                        ========================================== -->
+
+                        <optgroup label="Kelas 9">
+
+                            <option value="9.1">
+                                9.1
+                            </option>
+
+                            <option value="9.2">
+                                9.2
+                            </option>
+
+                            <option value="9.3">
+                                9.3
+                            </option>
+
+                            <option value="9.4">
+                                9.4
+                            </option>
+
+                            <option value="9.5">
+                                9.5
+                            </option>
+
+                            <option value="9.6">
+                                9.6
+                            </option>
+
+                            <option value="9.7">
+                                9.7
+                            </option>
+
+                            <option value="9.8">
+                                9.8
+                            </option>
+
+                            <option value="9.9">
+                                9.9
+                            </option>
+
+                            <option value="9.10">
+                                9.10
+                            </option>
+
+                        </optgroup>
+
+
+                    </select>
+
+                </div>
+
+
+                <!-- =================================================
+                     TAHUN AJARAN
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="tahunAjaran">
+
+                        Tahun Ajaran
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="tahunAjaran"
+                        name="tahunAjaran"
+                        placeholder="Contoh: 2026/2027"
+                        autocomplete="off"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     EMAIL
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="email">
+
+                        Email
+
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     PASSWORD
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="password">
+
+                        Password
+
+                    </label>
+
+
+                    <div class="password-wrapper">
+
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Minimal 6 karakter"
+                            autocomplete="new-password"
+                            minlength="6"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                            aria-label="Tampilkan password"
+                        >
+
+                            👁
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     KONFIRMASI PASSWORD
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+
+                        Konfirmasi Password
+
+                    </label>
+
+
+                    <div class="password-wrapper">
+
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Ulangi password"
+                            autocomplete="new-password"
+                            minlength="6"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword"
+                            class="toggle-password"
+                            aria-label="Tampilkan password"
+                        >
+
+                            👁
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     BUTTON DAFTAR
+                ================================================== -->
+
+                <button
+                    type="submit"
+                    id="registerButton"
+                    class="register-button"
+                >
+
+                    Daftar
+
+                </button>
+
+
+            </form>
+
+
+            <!-- =================================================
+                 KEMBALI KE LOGIN
+            ================================================== -->
+
+            <div class="register-link">
+
+
+                <p>
+
+                    Sudah memiliki akun?
+
+                    <a href="index.html">
+
+                        Login
+
+                    </a>
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================================
+         FIREBASE REGISTER
+    ========================================================== -->
+
+    <script
+        type="module"
+        src="register.js"
+    ></script>
+
+
+</body>
+
+</html>

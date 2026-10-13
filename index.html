@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | Website Kebugaran</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         MAIN LOGIN CONTAINER
+    ========================================================== -->
+
+    <main class="login-container">
+
+
+        <!-- =====================================================
+             PANEL INFORMASI SEKOLAH
+        ====================================================== -->
+
+        <section class="login-info">
+
+
+            <!-- =================================================
+                 5 LOGO KECIL
+            ================================================== -->
+
+            <div class="corner-logos">
+
+
+                <!-- LOGO PPG -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/UNM.png"
+                        alt="Logo PPG"
+                    >
+
+                </div>
+
+
+                <!-- TUT WURI HANDAYANI -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/TUTWURI.png"
+                        alt="Tut Wuri Handayani"
+                    >
+
+                </div>
+
+
+                <!-- DIKTI SAINTEK -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/DITSAINTEK.jpg"
+                        alt="Dikti Saintek Berdampak"
+                    >
+
+                </div>
+
+
+                <!-- LOGO SEKOLAH -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/PPG.jpg"
+                        alt="Logo Sekolah"
+                    >
+
+                </div>
+
+
+                <!-- LOGO KELIMA -->
+
+                <div class="corner-logo">
+
+                    <img
+                        src="assets/logo 1.jpg"
+                        alt="Logo Kelima"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 DEKORASI
+            ================================================== -->
+
+            <div
+                class="login-decoration-one"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="login-decoration-two"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- =================================================
+                 LOGO UTAMA
+            ================================================== -->
+
+            <div class="main-logo">
+
+                <img
+                    src="assets/logo.jpeg"
+                    alt="Logo UPT SPF SMP Negeri 30 Makassar"
+                >
+
+            </div>
+
+
+            <!-- =================================================
+                 JUDUL
+            ================================================== -->
+
+            <h1>
+
+                Website<br>
+
+                <span>
+                    Kebugaran
+                </span>
+
+            </h1>
+
+
+            <!-- =================================================
+                 NAMA SEKOLAH
+            ================================================== -->
+
+            <p class="school-name">
+
+                UPT SPF SMP Negeri 30 Makassar
+
+            </p>
+
+
+            <!-- =================================================
+                 DESKRIPSI
+            ================================================== -->
+
+            <p class="description">
+
+                Mari Bergerak, Mari Belajar, Mari Menjaga Kesehatan, 
+                Karena Tubuh Yang Aktif Adalah Bagian Dari Kehidupan yang Berkualitas.
+
+            </p>
+
+
+        </section>
+
+
+        <!-- =====================================================
+             LOGIN BOX
+        ====================================================== -->
+
+        <section class="login-box">
+
+
+            <!-- =================================================
+                 HEADER LOGIN
+            ================================================== -->
+
+            <div class="login-header">
+
+                <h2>
+
+                    Selamat Datang
+
+                </h2>
+
+                <p>
+
+                    Silakan masuk ke akun Anda
+
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 PESAN LOGIN
+            ================================================== -->
+
+            <div
+                id="loginMessage"
+                class="login-message"
+            ></div>
+
+
+            <!-- =================================================
+                 FORM LOGIN
+            ================================================== -->
+
+            <form id="loginForm">
+
+
+                <!-- =================================================
+                     EMAIL
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="email">
+
+                        Email
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     PASSWORD
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label for="password">
+
+                        Password
+
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Masukkan password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                            aria-label="Tampilkan password"
+                        >
+
+                            👁
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     LOGIN OPTIONS
+                ================================================== -->
+
+                <div class="login-options">
+
+
+                    <!-- INGAT SAYA -->
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                        >
+
+                        <span>
+
+                            Ingat saya
+
+                        </span>
+
+                    </label>
+
+
+                    <!-- LUPA PASSWORD -->
+
+                    <a
+                        href="#"
+                        id="forgotPassword"
+                        class="forgot-password"
+                    >
+
+                        Lupa password?
+
+                    </a>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     LOGIN BUTTON
+                ================================================== -->
+
+                <button
+                    type="submit"
+                    id="loginButton"
+                    class="login-button"
+                >
+
+                    Login
+
+                </button>
+
+
+            </form>
+
+
+            <!-- =================================================
+                 REGISTER
+            ================================================== -->
+
+            <div class="register-link">
+
+                <p>
+
+                    Belum memiliki akun?
+
+                    <a href="register.html">
+
+                        Daftar
+
+                    </a>
+
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 FOOTER LOGIN
+            ================================================== -->
+
+            <div class="login-footer">
+
+                Sistem Informasi Kebugaran
+                UPT SPF SMP Negeri 30 Makassar
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+         STATISTIK KEBUGARAN PUBLIK
+    ========================================================== -->
+
+    <section
+        class="login-chart-section"
+        id="statistikKebugaran"
+    >
+
+
+        <div class="login-chart-card">
+
+
+            <!-- =================================================
+                 HEADER STATISTIK
+            ================================================== -->
+
+            <div class="login-chart-header">
+
+
+                <span class="chart-label">
+
+                    STATISTIK KEBUGARAN
+
+                </span>
+
+
+                <h2>
+
+                    Gambaran Kebugaran Murid
+
+                </h2>
+
+
+                <p>
+
+                    Lihat rata-rata hasil tes kebugaran
+                    berdasarkan tahun ajaran, kelas, dan kelamin.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FILTER STATISTIK
+            ================================================== -->
+
+            <div class="login-chart-filter">
+
+
+                <!-- =============================================
+                     TAHUN AJARAN
+                ============================================== -->
+
+                <div class="filter-group">
+
+                    <label
+                        for="publicYearFilter"
+                    >
+
+                        Tahun Ajaran
+
+                    </label>
+
+
+                    <select
+                        id="publicYearFilter"
+                        aria-label="Pilih Tahun Ajaran"
+                    >
+
+                        <option value="all">
+
+                            Semua Tahun Ajaran
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- =============================================
+                     KELAS
+                ============================================== -->
+
+                <div class="filter-group">
+
+                    <label
+                        for="publicClassFilter"
+                    >
+
+                        Kelas
+
+                    </label>
+
+
+                    <select
+                        id="publicClassFilter"
+                        aria-label="Pilih Kelas"
+                    >
+
+                        <option value="all">
+
+                            Semua Kelas
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- =============================================
+                     JENIS KELAMIN
+                ============================================== -->
+
+                <div class="filter-group">
+
+                    <label
+                        for="publicGenderFilter"
+                    >
+
+                        Kelamin
+
+                    </label>
+
+
+                    <select
+                        id="publicGenderFilter"
+                        aria-label="Pilih Kelamin"
+                    >
+
+                        <option value="all">
+
+                            Semua
+
+                        </option>
+
+
+                        <option value="putra">
+
+                            Putra
+
+                        </option>
+
+
+                        <option value="putri">
+
+                            Putri
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 WADAH GRAFIK UTAMA
+            ================================================== -->
+
+            <div
+                id="loginPublicChart"
+                class="login-public-chart"
+            >
+
+
+                <!-- =================================================
+                     LOADING
+                ================================================== -->
+
+                <div
+                    class="public-chart-loading"
+                    id="publicChartLoading"
+                >
+
+                    Memuat statistik kebugaran...
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script
+        type="module"
+        src="login.js"
+    ></script>
+
+
+</body>
+
+</html>
